@@ -19,3 +19,9 @@ td {
 .left-align {
   text-align: left;
 }
+
+.solid {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 0.5px solid #bbb;
+}
