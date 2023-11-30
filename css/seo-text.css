@@ -20,8 +20,10 @@ td {
   text-align: left;
 }
 
-.solid {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  border: 0.5px solid #bbb;
+hr .solid {
+  /* margin-top: 1rem;
+  margin-bottom: 1rem; */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #bbb;
 }
