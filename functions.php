@@ -183,7 +183,9 @@ function tjekdepot_comment_count($count)
 }
 function namespace_theme_stylesheets()
 {
-    wp_register_style('custom-css',  get_template_directory_uri() . '/css/custom.css', array(), null, 'all');
-    wp_enqueue_style('custom-css');
+    wp_register_style('common-css',  get_template_directory_uri() . '/css/common.css', array(), null, 'all');
+    wp_enqueue_style('common-css');
+    wp_register_style('unit-list-css',  get_template_directory_uri() . '/css/unit-list.css', array(), null, 'all');
+    wp_enqueue_style('unit-list-css');
 }
 add_action('wp_enqueue_scripts', 'namespace_theme_stylesheets');
