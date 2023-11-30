@@ -1,0 +1,12 @@
+.geodir-search .form-group {
+  margin: 0px !important;
+}
+
+.geodir-search .btn-primary {
+  background-color: #e56825;
+  border-color: #e56825;
+}
+
+.geodir-search .form-control {
+  color: #e56825;
+}

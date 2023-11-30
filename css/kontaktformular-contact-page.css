@@ -1,0 +1,29 @@
+/* firstname inputfield width */
+#contactform_contactpage_firstname {
+  width: 170px;
+}
+
+/* lastname inputfield width */
+#contactform_contactpage_lastname {
+  width: 170px;
+}
+
+/* telnum inputfield width */
+#contactform_contactpage_telnum {
+  width: 170px;
+}
+
+/* zip inputfield width */
+#contactform_contactpage_zip {
+  width: 170px;
+}
+
+/* consent label text color */
+#contactform_contactpage_consent + span {
+  color: #b34a26;
+}
+
+/* consent checkbox inline */
+#contactform_contactpage_consent {
+  display: inline-flex !important;
+}

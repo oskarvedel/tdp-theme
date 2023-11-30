@@ -1,0 +1,30 @@
+.gd-bubble .geodir-bubble_image {
+  display: none;
+}
+
+.gd-bubble .geodir-entry-title {
+  font-family: poppins;
+  font-size: 14px;
+}
+
+.gd-bubble .geodir_post_meta.geodir-field-post_title {
+  display: none;
+}
+
+.gd-bubble .geodir_post_meta.geodir-field-phone {
+  display: none;
+}
+
+.gd-bubble .geodir-bubble_image {
+  display: none;
+}
+
+/*.gd-bubble .geodir_post_meta.gd-rating-info-wrap {
+    float: none;
+    position: relative;
+    left: 20%;
+} */
+
+.geodir-map-search-btn {
+  display: none;
+}

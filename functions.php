@@ -187,5 +187,25 @@ function namespace_theme_stylesheets()
     wp_enqueue_style('common-css');
     wp_register_style('unit-list-css',  get_template_directory_uri() . '/css/unit-list.css', array(), null, 'all');
     wp_enqueue_style('unit-list-css');
+    wp_register_style('advanced-filter-vertical-css',  get_template_directory_uri() . '/css/advanced-filter-vertical.css', array(), null, 'all');
+    wp_enqueue_style('advanced-filter-vertical-css');
+    wp_register_style('archive-item-css',  get_template_directory_uri() . '/css/archive-item.css', array(), null, 'all');
+    wp_enqueue_style('archive-item-css');
+    wp_register_style('gd-map-css',  get_template_directory_uri() . '/css/gd-map.css', array(), null, 'all');
+    wp_enqueue_style('gd-map-css');
+    wp_register_style('gd-search-bar-css',  get_template_directory_uri() . '/css/gd-search-bar.css', array(), null, 'all');
+    wp_enqueue_style('gd-search-bar-css');
+    wp_register_style('kontaktformular-common-css',  get_template_directory_uri() . '/css/kontaktformular-common.css', array(), null, 'all');
+    wp_enqueue_style('kontaktformular-common-css');
+    wp_register_style('kontaktformular-contact-page-css',  get_template_directory_uri() . '/css/kontaktformular-contact-page.css', array(), null, 'all');
+    wp_enqueue_style('kontaktformular-contact-page-css');
+    wp_register_style('kontaktformular-get-offer-css',  get_template_directory_uri() . '/css/kontaktformular-get-offer.css', array(), null, 'all');
+    wp_enqueue_style('kontaktformular-get-offer-css');
+    wp_register_style('kontaktformular-partner-css',  get_template_directory_uri() . '/css/kontaktformular-partner.css', array(), null, 'all');
+    wp_enqueue_style('kontaktformular-partner-css');
+    wp_register_style('ninja-forms-css',  get_template_directory_uri() . '/css/ninja-forms.css', array(), null, 'all');
+    wp_enqueue_style('ninja-forms-css');
+    wp_register_style('seo-text-css',  get_template_directory_uri() . '/css/seo-text.css', array(), null, 'all');
+    wp_enqueue_style('seo-text-css');
 }
 add_action('wp_enqueue_scripts', 'namespace_theme_stylesheets');

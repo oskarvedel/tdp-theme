@@ -1,0 +1,27 @@
+.modal-body {
+  padding: 0rem !important;
+}
+
+.bsui .modal-body {
+  padding: 0rem !important;
+}
+
+.body {
+  padding: 0px 0px !important;
+}
+
+.nf-form-fields-required {
+  display: none !important;
+}
+
+.ninja-forms-req-symbol {
+  display: none !important;
+}
+
+.bsui .modal-header /*works*/ {
+  border-bottom: 0px !important;
+}
+
+.bsui .close /*works*/ {
+  font-size: 2rem;
+}

@@ -1,0 +1,73 @@
+/* .geodir-filter-container .geodir-filter-cat{
+     display: inline;
+}
+ */
+/*
+ .geodir-filter-container .geodir-filter-cat{
+     display: flex;
+     justify-content: flex-start;
+}
+ .geodir-filter-container .form-field-label{
+     display: none;
+}
+ .geodir-filter-container .form-check {
+     background: #FFFFFF;
+     color: #000000;
+     border-color: #ECECEC;
+     border-style: solid;
+     border-width: 2px;
+     border-radius: 4px;
+     font-family: Helvetica;
+     font-size: 14pt;
+     font-weight: 600;
+     padding: 30px 30px 30px 60px;
+     margin: 10px 0px 10px 0px;
+     vertical-align: top;
+}
+ .geodir-filter-container .form-check:hover {
+     border-color: #FF9D3D;
+}
+	  */
+/* input[type="checkbox"]:checked ~ .form-check {
+     background: #FF9D3D;
+     background-color: #FF9D3D;
+}
+ input[type="checkbox"]:checked + .mb-1 {
+     background-color: #FF9D3D;
+}
+ */
+
+.geodir-filter-container .form-check .form-check-label {
+  color: #000000 !important;
+  margin: 0px 0px 0px 20px;
+}
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: var(--form-background);
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  width: 1em;
+  height: 1em;
+  border: 0.15em solid #000000;
+  border-radius: 0.15em;
+  transform: translateY(-0.1em);
+  display: grid;
+  place-content: center;
+  color: #000000;
+}
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.5em;
+  height: 0.5em;
+  transform: scale(0);
+  transform-origin: bottom left;
+  background-color: #000000;
+}
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}

@@ -1,0 +1,27 @@
+/* placeholder text opacity */
+.wpcf7-form-control::placeholder {
+  opacity: 1;
+}
+/* firstname p wrapper css */
+.eael-contact-form-7 .wpcf7-form p:nth-child(2) {
+  display: inline;
+  float: left;
+}
+
+/* lastname p wrapper css */
+.eael-contact-form-7 .wpcf7-form p:nth-child(3) {
+  display: inline;
+  float: right;
+}
+
+/* firstname p wrapper css */
+.eael-contact-form-7 .wpcf7-form p:nth-child(4) {
+  display: inline;
+  float: left;
+}
+
+/* lastname p wrapper css */
+.eael-contact-form-7 .wpcf7-form p:nth-child(5) {
+  display: inline;
+  float: right;
+}
