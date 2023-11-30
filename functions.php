@@ -183,7 +183,7 @@ function tjekdepot_comment_count($count)
 }
 function namespace_theme_stylesheets()
 {
-    wp_register_style('custom-css',  get_template_directory_uri() . '/custom.css', array(), null, 'all');
+    wp_register_style('custom-css',  get_template_directory_uri() . 'css/custom.css', array(), null, 'all');
     wp_enqueue_style('custom-css');
 }
 add_action('wp_enqueue_scripts', 'namespace_theme_stylesheets');
