@@ -1,5 +1,17 @@
+/********** THREE COLUMNS /***********/
 .three-columns {
   column-count: 3;
+}
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+  .three-columns {
+    column-count: 1;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
 }
 
 table {
