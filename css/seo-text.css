@@ -38,3 +38,17 @@ td {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+.partner_gd_place_link {
+  font-weight: bold;
+  /* text-decoration: none !important; */
+}
+
+.gd_place_link {
+  font-weight: normal;
+  /* text-decoration: none !important; */
+}
+
+.gd_place_list {
+  line-height: 2rem;
+}
