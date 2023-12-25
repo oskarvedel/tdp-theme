@@ -1,0 +1,26 @@
+.horizontal-list {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.horizontal-list a {
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  border: 1px solid #c0c0c0;
+  margin: 5px;
+  padding: 5px 10px 5px 10px;
+  transition: background-color 0.3s ease;
+  display: block;
+  text-decoration: none;
+  color: #101010;
+  font-size: 0.95rem;
+}
+
+.horizontal-list a:hover {
+  background-color: #ddd;
+  color: #101010 !important;
+}

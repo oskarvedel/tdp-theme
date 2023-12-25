@@ -207,5 +207,7 @@ function namespace_theme_stylesheets()
     wp_enqueue_style('ninja-forms-css');
     wp_register_style('seo-text-css',  get_template_directory_uri() . '/css/seo-text.css', array(), null, 'all');
     wp_enqueue_style('seo-text-css');
+    wp_register_style('nearby-locations-list-css',  get_template_directory_uri() . '/css/nearby-locations-list.css', array(), null, 'all');
+    wp_enqueue_style('nearby-locations-list-css');
 }
 add_action('wp_enqueue_scripts', 'namespace_theme_stylesheets');
