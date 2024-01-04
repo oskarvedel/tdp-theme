@@ -8,12 +8,16 @@
   display: flex;
   font-family: "Helvetica";
   padding: 0.5rem;
-  margin-top: 0.8rem;
-  margin-bottom: 0.8rem;
-  /*border:1px solid #ECECEC;
-    border-radius: 0.75rem;
-      box-shadow: 0px 0px 16px 0px rgb(0 0 0 / 5%);*/
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
   border-bottom: 1px solid #ececec;
+  color: #000000;
+  text-decoration: none; /* Removes underline */
+}
+
+.depotrum-list .depotrum-row:hover {
+  background-color: #f5f5f5; /* Lighter background on hover */
+  color: #000000;
 }
 
 /* tablet */
@@ -66,20 +70,40 @@
 }
 
 .depotrum-list .depotrum-row .size {
-  font-size: 18pt;
+  font-size: 11pt;
   font-weight: 700;
 }
 
 .depotrum-list .depotrum-row .sizelabel {
   color: #000000;
-  font-size: 13pt;
+  font-size: 11pt;
   font-weight: 500;
   margin-left: 5px;
 }
-.depotrum-list .depotrum-row .type {
+
+.depotrum-list .depotrum-row .smallsize {
+  font-size: 11pt;
+  font-weight: 600;
+}
+
+.depotrum-list .depotrum-row .smallsizelabel {
   color: #000000;
   font-size: 11pt;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.depotrum-list .depotrum-row .type {
+  color: #000000;
+  font-size: 17pt;
   font-weight: 500;
+}
+
+.depotrum-list .depotrum-row .typesize {
+  color: #000000;
+  font-size: 17pt;
+  font-weight: 500;
+  margin-left: 5px;
 }
 
 /* tablet */
