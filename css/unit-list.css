@@ -51,94 +51,60 @@
 .vertical-center {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-/********** M2 COLUMN /***********/
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+/********** SIZE COLUMN /***********/
 /* common / full screen */
-.depotrum-list .depotrum-row .m2-column {
+.depotrum-list .depotrum-row .size-column {
   min-width: 80px;
 }
 
-.depotrum-list .depotrum-row .m2size {
+.depotrum-list .depotrum-row .size {
   font-size: 18pt;
   font-weight: 700;
 }
 
-.depotrum-list .depotrum-row .m2label {
+.depotrum-list .depotrum-row .sizelabel {
   color: #000000;
   font-size: 13pt;
   font-weight: 500;
   margin-left: 5px;
 }
+.depotrum-list .depotrum-row .type {
+  color: #000000;
+  font-size: 11pt;
+  font-weight: 500;
+}
 
 /* tablet */
 @media screen and (max-width: 1024px) {
-  .depotrum-list .depotrum-row .m2size {
+  .depotrum-list .depotrum-row .size {
     font-size: 16pt;
   }
 
-  .depotrum-list .depotrum-row .m2label {
+  .depotrum-list .depotrum-row .sizelabel {
     font-size: 11pt;
   }
 }
 
 /* mobile */
 @media screen and (max-width: 767px) {
-  .depotrum-list .depotrum-row .m2-column {
+  .depotrum-list .depotrum-row .size-column {
     min-width: 60px;
   }
 
-  .depotrum-list .depotrum-row .m2size {
+  .depotrum-list .depotrum-row .size {
     font-weight: 600;
     font-size: 15pt;
   }
 
-  .depotrum-list .depotrum-row .m2label {
-  }
-}
-/*********************/
-
-/********** M3 COLUMN /***********/
-/* common / full screen */
-.depotrum-list .depotrum-row .m3-column {
-  min-width: 80px;
-}
-
-.depotrum-list .depotrum-row .m3size {
-  font-size: 18pt;
-  font-weight: 700;
-}
-
-.depotrum-list .depotrum-row .m3label {
-  color: #000000;
-  font-size: 13pt;
-  font-weight: 500;
-  margin-left: 5px;
-}
-
-/* tablet */
-@media screen and (max-width: 1024px) {
-  .depotrum-list .depotrum-row .m3size {
-    font-size: 16pt;
-  }
-
-  .depotrum-list .depotrum-row .m3label {
-    font-size: 11pt;
-  }
-}
-
-/* mobile */
-@media screen and (max-width: 767px) {
-  .depotrum-list .depotrum-row .m3-column {
-    min-width: 60px;
-  }
-
-  .depotrum-list .depotrum-row .m3size {
-    font-weight: 600;
-    font-size: 15pt;
-  }
-
-  .depotrum-list .depotrum-row .m3label {
+  .depotrum-list .depotrum-row .sizelabel {
   }
 }
 /*********************/
