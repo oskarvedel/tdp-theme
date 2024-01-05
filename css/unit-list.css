@@ -52,6 +52,15 @@
   margin-left: 1rem;
 }
 
+/* mobile */
+@media screen and (max-width: 767px) {
+  .depotrum-list .depotrum-row .flex-container {
+    gap: 0.5rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+}
+
 .vertical-center {
   display: flex;
   align-items: center;
@@ -66,7 +75,8 @@
 /********** SIZE COLUMN /***********/
 /* common / full screen */
 .depotrum-list .depotrum-row .size-column {
-  min-width: 80px;
+  padding-left: 1rem;
+  gap: 0.1rem;
 }
 
 .depotrum-list .depotrum-row .detaileddesc {
@@ -78,40 +88,23 @@
   color: #000000;
   font-size: 17pt;
   font-weight: 600;
+  white-space: nowrap;
 }
 .depotrum-list .depotrum-row .bignormal {
   color: #000000;
   font-size: 17pt;
   font-weight: 500;
+  white-space: nowrap;
 }
 .depotrum-list .depotrum-row .smallbold {
   color: #000000;
   font-size: 9pt;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 /* tablet */
 @media screen and (max-width: 1024px) {
-  .depotrum-list .depotrum-row .detaileddesc {
-    font-size: 10pt;
-    font-weight: 500;
-  }
-
-  .depotrum-list .depotrum-row .bigbold {
-    color: #000000;
-    font-size: 17pt;
-    font-weight: 600;
-  }
-  .depotrum-list .depotrum-row .bignormal {
-    color: #000000;
-    font-size: 17pt;
-    font-weight: 500;
-  }
-  .depotrum-list .depotrum-row .smallbold {
-    color: #000000;
-    font-size: 9pt;
-    font-weight: 600;
-  }
 }
 
 /* mobile */
@@ -119,16 +112,18 @@
   .depotrum-list .depotrum-row .detaileddesc {
     font-size: 10pt;
     font-weight: 500;
+    display: none;
   }
 
   .depotrum-list .depotrum-row .bigbold {
     color: #000000;
-    font-size: 17pt;
+    font-size: 15pt;
     font-weight: 600;
+    margin-top: -0.5rem;
   }
   .depotrum-list .depotrum-row .bignormal {
     color: #000000;
-    font-size: 17pt;
+    font-size: 13pt;
     font-weight: 500;
   }
   .depotrum-list .depotrum-row .smallbold {
@@ -137,6 +132,21 @@
     font-weight: 600;
   }
 }
+/*********************/
+
+/********** IMAGE COLUMN /***********/
+.depotrum-list .depotrum-row .image-column {
+  min-width: 70px;
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  .depotrum-list .depotrum-row .image-column {
+    min-width: 60px;
+    max-width: 60px;
+  }
+}
+
 /*********************/
 
 /********** PLACEMENT COLUMN /***********/
@@ -200,6 +210,7 @@
   color: #3f4245;
   font-weight: 400;
   font-size: 15pt;
+  white-space: nowrap;
 }
 
 .depotrum-list .depotrum-row .month {
@@ -223,7 +234,8 @@
 /* mobile */
 @media screen and (max-width: 767px) {
   .depotrum-list .depotrum-row .price-column {
-    min-width: 120px;
+    /* min-width: 100px; */
+    padding-left: 0.5rem;
   }
   .depotrum-list .depotrum-row .price {
     font-size: 13pt;
