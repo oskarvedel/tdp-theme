@@ -95,6 +95,7 @@
   font-size: 17pt;
   font-weight: 500;
   white-space: nowrap;
+  margin-bottom: -1.5rem;
 }
 .depotrum-list .depotrum-row .smallbold {
   color: #000000;
