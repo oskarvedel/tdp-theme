@@ -92,27 +92,49 @@
 
 /* tablet */
 @media screen and (max-width: 1024px) {
-  .depotrum-list .depotrum-row .size {
-    font-size: 16pt;
+  .depotrum-list .depotrum-row .detaileddesc {
+    font-size: 10pt;
+    font-weight: 500;
   }
 
-  .depotrum-list .depotrum-row .sizelabel {
-    font-size: 11pt;
+  .depotrum-list .depotrum-row .bigbold {
+    color: #000000;
+    font-size: 17pt;
+    font-weight: 600;
+  }
+  .depotrum-list .depotrum-row .bignormal {
+    color: #000000;
+    font-size: 17pt;
+    font-weight: 500;
+  }
+  .depotrum-list .depotrum-row .smallbold {
+    color: #000000;
+    font-size: 9pt;
+    font-weight: 600;
   }
 }
 
 /* mobile */
 @media screen and (max-width: 767px) {
-  .depotrum-list .depotrum-row .size-column {
-    min-width: 60px;
+  .depotrum-list .depotrum-row .detaileddesc {
+    font-size: 10pt;
+    font-weight: 500;
   }
 
-  .depotrum-list .depotrum-row .size {
+  .depotrum-list .depotrum-row .bigbold {
+    color: #000000;
+    font-size: 17pt;
     font-weight: 600;
-    font-size: 15pt;
   }
-
-  .depotrum-list .depotrum-row .sizelabel {
+  .depotrum-list .depotrum-row .bignormal {
+    color: #000000;
+    font-size: 17pt;
+    font-weight: 500;
+  }
+  .depotrum-list .depotrum-row .smallbold {
+    color: #000000;
+    font-size: 9pt;
+    font-weight: 600;
   }
 }
 /*********************/
