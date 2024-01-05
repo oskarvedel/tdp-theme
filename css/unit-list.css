@@ -302,6 +302,7 @@
   user-select: none;
   border-radius: 0.3rem;
   border: 0px;
+  margin-top: 1rem;
 }
 /* mobile */
 @media screen and (max-width: 767px) {
