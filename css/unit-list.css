@@ -15,8 +15,21 @@
   text-decoration: none; /* Removes underline */
 }
 
-.depotrum-list .depotrum-row:hover {
-  background-color: #f5f5f5; /* Lighter background on hover */
+.depotrum-list .depotrum-row.last {
+  border-bottom: 0px;
+}
+
+.depotrum-list .depotrum-row.partner:hover {
+  background-color: #f5f5f5 !important; /* Darker background on hover */
+  color: #000000;
+}
+
+.depotrum-list .depotrum-row.non-partner {
+  padding: 0.2rem;
+}
+
+.depotrum-list .depotrum-row.non-partner:hover {
+  background-color: #ffffff !important; /* Same background on hover */
   color: #000000;
 }
 
@@ -89,12 +102,18 @@
   font-weight: 600;
   white-space: nowrap;
 }
-.depotrum-list .depotrum-row .bignormal {
+.depotrum-list .depotrum-row .big {
   color: #000000;
   font-size: 17pt;
   font-weight: 500;
   white-space: nowrap;
   margin-bottom: -1.5rem;
+}
+.depotrum-list .depotrum-row .normal {
+  color: #000000;
+  font-size: 12pt;
+  font-weight: 400;
+  white-space: nowrap;
 }
 .depotrum-list .depotrum-row .smallbold {
   color: #000000;
@@ -115,13 +134,20 @@
     display: none;
   }
 
+  .depotrum-list .depotrum-row .normal {
+    color: #000000;
+    font-size: 11pt;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+
   .depotrum-list .depotrum-row .bigbold {
     color: #000000;
     font-size: 15pt;
     font-weight: 600;
     margin-top: -0.5rem;
   }
-  .depotrum-list .depotrum-row .bignormal {
+  .depotrum-list .depotrum-row .big {
     color: #000000;
     font-size: 13pt;
     font-weight: 500;
@@ -208,9 +234,17 @@
 
 .depotrum-list .depotrum-row .price {
   color: #3f4245;
-  font-weight: 400;
-  font-size: 15pt;
   white-space: nowrap;
+}
+
+.depotrum-list .depotrum-row .price.partner {
+  font-weight: 400;
+  font-size: 14pt;
+}
+
+.depotrum-list .depotrum-row .price.non-partner {
+  font-weight: 300;
+  font-size: 12pt;
 }
 
 .depotrum-list .depotrum-row .month {
@@ -222,10 +256,6 @@
 
 /* tablet */
 @media screen and (max-width: 1024px) {
-  .depotrum-list .depotrum-row .price {
-    font-size: 14pt;
-  }
-
   .depotrum-list .depotrum-row .month {
     font-size: 9pt;
   }
@@ -237,8 +267,14 @@
     /* min-width: 100px; */
     padding-left: 0.5rem;
   }
-  .depotrum-list .depotrum-row .price {
-    font-size: 13pt;
+  .depotrum-list .depotrum-row .price.partner {
+    font-weight: 400;
+    font-size: 14pt;
+  }
+
+  .depotrum-list .depotrum-row .price.non-partner {
+    font-weight: 300;
+    font-size: 11pt;
   }
 
   .depotrum-list .depotrum-row .month {
@@ -302,11 +338,12 @@
   user-select: none;
   border-radius: 0.3rem;
   border: 0px;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 /* mobile */
 @media screen and (max-width: 767px) {
   .view-all-button {
+    margin-top: 0.4rem;
     padding: 0.4rem 0.6rem;
     font-size: 11pt;
   }
