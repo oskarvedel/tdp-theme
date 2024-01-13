@@ -1,10 +1,15 @@
 .depotrum-list {
   width: 100%;
+  margin-top: 1rem;
+  /* padding: 1rem; */
+  border: 1px solid #eaeaea;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
 }
 
 .outer-depotrum-row {
   width: 100%;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #eaeaea;
 }
 
 /********** DEPOTRUM ROW /***********/
@@ -13,7 +18,7 @@
   display: flex;
   flex-grow: 1;
   font-family: "Helvetica";
-  padding: 0.5rem;
+  padding: 1rem;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
   color: #000000;
@@ -66,7 +71,7 @@
   flex-direction: row;
   justify-content: flex-start;
   gap: 1.5rem;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 
 /* mobile */
