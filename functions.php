@@ -209,5 +209,7 @@ function namespace_theme_stylesheets()
     wp_enqueue_style('seo-text-css');
     wp_register_style('nearby-locations-list-css',  get_template_directory_uri() . '/css/nearby-locations-list.css', array(), null, 'all');
     wp_enqueue_style('nearby-locations-list-css');
+    wp_register_style('booking-form-css',  get_template_directory_uri() . '/css/booking-form.css', array(), null, 'all');
+    wp_enqueue_style('booking-form-css');
 }
 add_action('wp_enqueue_scripts', 'namespace_theme_stylesheets');

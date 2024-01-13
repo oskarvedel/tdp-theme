@@ -2,21 +2,31 @@
   width: 100%;
 }
 
+.outer-depotrum-row {
+  width: 100%;
+  border-bottom: 1px solid #ececec;
+}
+
 /********** DEPOTRUM ROW /***********/
 /* common / full screen */
 .depotrum-list .depotrum-row {
   display: flex;
+  flex-grow: 1;
   font-family: "Helvetica";
   padding: 0.5rem;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
-  border-bottom: 1px solid #ececec;
   color: #000000;
   text-decoration: none; /* Removes underline */
 }
 
 .depotrum-list .depotrum-row.last {
   border-bottom: 0px;
+}
+
+.depotrum-list .depotrum-row.partner.yellowhover:hover {
+  background-color: #fffae5 !important; /* Yellow background on hover */
+  color: #000000;
 }
 
 .depotrum-list .depotrum-row.partner:hover {
@@ -26,11 +36,6 @@
 
 .depotrum-list .depotrum-row.non-partner {
   padding: 0.2rem;
-}
-
-.depotrum-list .depotrum-row.non-partner:hover {
-  background-color: #ffffff !important; /* Same background on hover */
-  color: #000000;
 }
 
 /* tablet */
@@ -297,26 +302,32 @@
 /********** CONTINUE BUTTON /***********/
 /* common / full screen */
 .continue-button {
-  padding: 0.75rem 1rem;
   background-color: #ff336a;
   color: #ffffff;
-  font-size: 0.75rem;
+  font-size: 16px;
+  font-weight: 600;
   line-height: 1rem;
-  font-weight: 700;
-  font-size: 1rem;
   font-family: "Helvetica";
   text-align: center;
+  outline: none; /* Remove outline */
   vertical-align: middle;
   align-items: center;
   user-select: none;
-  border-radius: 0.3rem;
-  border: 0px;
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 6px !important;
+  border: none; /* No border */
+  padding: 14px 24px; /* Top and bottom padding 12px, left and right padding 24px */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.continue-button:hover {
+  transform: scale(1.02);
 }
 /* mobile */
 @media screen and (max-width: 767px) {
   .continue-button {
-    padding: 0.4rem 0.6rem;
-    font-size: 11pt;
+    padding: 10px 20px; /* Top and bottom padding 12px, left and right padding 24px */
+    font-size: 14pt;
   }
 }
 /*********************/
@@ -339,6 +350,7 @@
   border-radius: 0.3rem;
   border: 0px;
   margin-top: 0.5rem;
+  cursor: pointer;
 }
 /* mobile */
 @media screen and (max-width: 767px) {
