@@ -7,6 +7,10 @@
   border-top-left-radius: 6px;
 }
 
+.depotrum-list.no-border {
+  border: 0px !important;
+}
+
 .outer-depotrum-row {
   width: 100%;
   border-bottom: 1px solid #eaeaea;
