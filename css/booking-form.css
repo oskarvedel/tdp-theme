@@ -150,3 +150,11 @@ select:focus {
 .instruction .fullwidth {
   width: 100%;
 }
+
+.error-message {
+  color: #ff3333;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  display: none;
+}
