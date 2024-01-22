@@ -144,6 +144,7 @@ select:focus {
   margin-top: 0; /* Remove any default margin */
   width: 48%;
   font-weight: 200;
+  margin-bottom: 0rem !important;
 }
 
 .instruction .fullwidth {

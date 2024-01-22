@@ -1,0 +1,49 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.reservation-confirmation {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.confirmation-header h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.confirmation-header p,
+.reservation-details h2,
+.reservation-details p,
+.your-information h2,
+.your-information p,
+.storage-facility h2,
+.storage-facility p,
+.storage-unit h2,
+.storage-unit p {
+  color: #666;
+  margin-bottom: 8px;
+}
+
+h2 {
+  padding-top: 10px;
+  border-top: 2px solid #eee;
+  color: #333;
+}
+
+/* Add more specificity as needed for each section */
