@@ -106,8 +106,8 @@ get_header();
             <p class="price-label">Pris per måned</p>
         </div>
         <div class="sub-price-section" style="padding-left: 1rem;">
-            <p class="price"><?php echo htmlspecialchars($unit_price); ?></p>
-            <p class="price-sub-label">kr. om måneden</p>
+            <p class="price"><?php echo htmlspecialchars($unit_price); ?> kr</p>
+            <p class="price-sub-label">om måneden</p>
         </div>
         <span class="dashed-line">&nbsp;</span>
     </div>
