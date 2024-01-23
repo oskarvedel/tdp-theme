@@ -1,17 +1,17 @@
 /* Basic reset */
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
-body {
+/* body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 20px;
   background-color: #f4f4f4;
-}
+} */
 
 .reservation-confirmation {
   max-width: 600px;
@@ -39,11 +39,3 @@ body {
   color: #666;
   margin-bottom: 8px;
 }
-
-h2 {
-  padding-top: 10px;
-  border-top: 2px solid #eee;
-  color: #333;
-}
-
-/* Add more specificity as needed for each section */
