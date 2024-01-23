@@ -181,6 +181,16 @@ function tjekdepot_comment_count($count)
         return $count;
     }
 }
+
+function custom_page_titles($title_parts)
+{
+    if (strpos($_SERVER['REQUEST_URI'], '/reservation/confirmation/') !== false) {
+        $title_parts['title'] = 'Bekræftelse af booking';
+    }
+    return $title_parts;
+}
+add_filter('document_title_parts', 'custom_page_titles');
+
 function namespace_theme_stylesheets()
 {
     wp_register_style('common-css',  get_template_directory_uri() . '/css/common.css', array(), null, 'all');

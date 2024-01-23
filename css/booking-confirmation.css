@@ -1,41 +1,119 @@
-/* Basic reset */
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
-/* body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 20px;
-  background-color: #f4f4f4;
-} */
-
-.reservation-confirmation {
-  max-width: 600px;
+.confirmation-section {
+  max-width: 960px;
   margin: 20px auto;
   background: #fff;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  padding: 20px 40px 20px 40px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  font-family: "Arial", sans-serif;
+  text-align: left;
+  color: #000;
 }
 
-.confirmation-header h1 {
-  color: #333;
-  margin-bottom: 10px;
+/* set mobile device  */
+/* mobile */
+@media screen and (max-width: 767px) {
+  .confirmation-section {
+    margin: 10px auto;
+    padding: 10px 20px 10px 30px;
+  }
 }
 
-.confirmation-header p,
-.reservation-details h2,
-.reservation-details p,
-.your-information h2,
-.your-information p,
-.storage-facility h2,
-.storage-facility p,
-.storage-unit h2,
-.storage-unit p {
-  color: #666;
-  margin-bottom: 8px;
+.confirmation-section h1 {
+  font-size: 3rem !important;
+  margin-bottom: 20px;
+}
+
+.confirmation-section h2 {
+  font-size: 22px;
+}
+
+.confirmation-section h3 {
+  font-size: 18px !important;
+  margin-bottom: 1rem;
+}
+
+/* Styling for the content similar to the second image */
+.confirmation-section p {
+  margin-bottom: 0.5rem !important;
+}
+.what-now-text {
+  margin-top: 1rem;
+  font-size: 17px;
+  font-weight: 100;
+}
+
+.confirmation-code-label {
+  font-size: 24px;
+  font-weight: normal;
+  display: inline;
+}
+
+.confirmation-code {
+  font-size: 24px;
+  font-weight: bold;
+  display: inline;
+}
+
+.move-in-date-label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 1rem !important;
+  margin-bottom: 0rem !important;
+  text-transform: uppercase;
+}
+
+.move-in-date {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0rem !important;
+}
+
+.office-hours {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.checkmark {
+  color: #e56825;
+  font-weight: bold;
+  font-size: 1.3rem !important;
+}
+
+.price-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sub-price-section {
+  background-color: #ffffff;
+  z-index: 2;
+  padding-right: 1rem;
+}
+
+.price-label {
+  font-weight: 500;
+  /* align-self: flex-start; */
+}
+
+.price {
+  margin-bottom: 0; /* Remove the float and add margin-bottom */
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.price-sub-label {
+  margin-top: -5px !important;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.dashed-line {
+  position: absolute;
+  border-bottom: 2px dotted #eaeaea;
+  width: 100%;
+  max-width: 800px;
+  background: transparent;
+  z-index: 0;
 }
