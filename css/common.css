@@ -58,6 +58,10 @@ small {
   font-size: 0.95rem;
 }
 
+i {
+  font-style: italic;
+}
+
 /*
 .geodir-badge-featured-is_empty {
     -webkit-filter: grayscale(100%);
