@@ -67,13 +67,8 @@ function tjekdepot_footer()
     </script>
 <?php
 }
-add_filter('document_title_separator', 'tjekdepot_document_title_separator');
-function tjekdepot_document_title_separator($sep)
-{
-    $sep = esc_html('|');
-    return $sep;
-}
-add_filter('the_title', 'tjekdepot_title');
+
+//sanitize titles with wp_kses_post
 function tjekdepot_title($title)
 {
     if ($title == '') {
@@ -82,6 +77,18 @@ function tjekdepot_title($title)
         return wp_kses_post($title);
     }
 }
+
+add_filter('document_title_parts', 'remove_site_name_from_title', 10, 1);
+function remove_site_name_from_title($title_parts)
+{
+    // Check if the title contains the site name 
+    if (isset($title_parts['site'])) {
+        // Remove the site name from the title 
+        unset($title_parts['site']);
+    }
+    return $title_parts;
+}
+
 function tjekdepot_schema_type()
 {
     $schema = 'https://schema.org/';
