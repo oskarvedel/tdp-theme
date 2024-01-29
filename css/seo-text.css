@@ -54,6 +54,8 @@
   margin-bottom: 0.8rem !important;
 }
 
+/*********************/
+
 table {
   border-collapse: collapse;
   margin-top: 0.5rem;
@@ -113,3 +115,93 @@ td {
 }
 
 /*********************/
+
+/********* CHANGE TABLE LABELS ON MOBILE  *********/
+
+@media screen and (max-width: 767px) {
+  th.seo-table-lowest-price strong {
+    font-size: 0; /* Hide original text */
+  }
+
+  th.seo-table-lowest-price strong::after {
+    content: "Lavest"; /* Display new text */
+    font-size: 16px; /* Reset font size */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  th.seo-table-average-price strong {
+    font-size: 0; /* Hide original text */
+  }
+
+  th.seo-table-average-price strong::after {
+    content: "Gennemsnit"; /* Display new text */
+    font-size: 16px; /* Reset font size */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  th.seo-table-highest-price strong {
+    font-size: 0; /* Hide original text */
+  }
+
+  th.seo-table-highest-price strong::after {
+    content: "Højest"; /* Display new text */
+    font-size: 16px; /* Reset font size */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  td.seo-table-mini {
+    font-size: 0; /* Hide original text */
+  }
+
+  td.seo-table-mini::after {
+    content: "Mini"; /* Display new text */
+    font-size: 16px; /* Reset font size */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  td.seo-table-small {
+    font-size: 0; /* Hide original text */
+  }
+
+  td.seo-table-small::after {
+    content: "Lille"; /* Display new text */
+    font-size: 16px; /* Reset font size */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  td.seo-table-medium {
+    font-size: 0; /* Hide original text */
+  }
+
+  td.seo-table-medium::after {
+    content: "Mellem"; /* Display new text */
+    font-size: 16px; /* Reset font size */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  td.seo-table-large {
+    font-size: 0; /* Hide original text */
+  }
+
+  td.seo-table-large::after {
+    content: "Stort"; /* Display new text */
+    font-size: 16px; /* Reset font size */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  td.seo-table-xlarge {
+    font-size: 0; /* Hide original text */
+  }
+
+  td.seo-table-xlarge::after {
+    content: "Meget stort"; /* Display new text */
+    font-size: 16px; /* Reset font size */
+  }
+}
