@@ -1,22 +1,64 @@
 /********** THREE COLUMNS /***********/
 .three-columns {
   column-count: 3;
+  line-height: 1.5rem !important;
+  font-size: 12pt;
 }
 
 /* tablet */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 767px) {
+  .three-columns {
+    column-count: 2;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 580px) {
   .three-columns {
     column-count: 1;
   }
 }
 
+/*********************/
+
+/********* MAP IMG  *********/
+
+.map-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0 0.5rem 0.5rem 0;
+}
+
 /* mobile */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 580px) {
+  .map-img {
+    padding: 0rem 1rem 0.5rem 0.5rem;
+  }
+}
+
+/********* HEADINGS  *********/
+
+.seo-text h2 {
+  font-size: 1.5rem !important;
+  margin-bottom: 0.8rem !important;
+}
+
+.seo-text h3 {
+  font-size: 1.3rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.seo-text h4 {
+  font-size: 1.2rem !important;
+  margin-bottom: 0.8rem !important;
 }
 
 table {
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 0.5rem;
+  line-height: 1.5rem !important;
+  font-size: 12pt;
 }
 
 th,
@@ -37,6 +79,8 @@ td {
   height: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .partner_gd_place_link {
@@ -50,8 +94,10 @@ td {
 }
 
 .gd_place_list {
-  line-height: 2rem;
+  line-height: 2rem !important;
 }
+
+/********** TOP SEO TEXT /***********/
 
 .top-seo-text {
   /* color: #4d4d4d; */
@@ -65,3 +111,5 @@ td {
     font-size: 11pt;
   }
 }
+
+/*********************/
