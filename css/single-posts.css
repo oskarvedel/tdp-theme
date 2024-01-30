@@ -1,0 +1,22 @@
+.dropshadow img {
+  -webkit-filter: drop-shadow(5px 5px 8px #ddd);
+  filter: drop-shadow(5px 5px 8px #ddd);
+}
+
+.post-image-rounded-corners img {
+  border-radius: 10px;
+}
+.aligncenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.aligncenter img {
+  align-self: center;
+}
+
+.post-heading {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
