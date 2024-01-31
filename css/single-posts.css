@@ -4,8 +4,9 @@
 }
 
 .post-image-rounded-corners img {
-  border-radius: 10px;
+  border-radius: 10px !important;
 }
+
 .aligncenter {
   display: flex;
   flex-direction: row;
@@ -19,4 +20,12 @@
 .post-heading {
   margin-top: 0.5rem !important;
   margin-bottom: 0.5rem !important;
+}
+
+.sales-menu-item a {
+  font-weight: 500 !important;
+}
+
+.menu-heading a {
+  font-weight: 600 !important;
 }
