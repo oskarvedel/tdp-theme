@@ -198,6 +198,15 @@ function custom_page_titles($title_parts)
 }
 add_filter('document_title_parts', 'custom_page_titles');
 
+function sales_menu_locations()
+{
+    register_nav_menus(array(
+        'sales_menu' => 'Sales Menu',
+    ));
+}
+add_action('init', 'sales_menu_locations');
+
+
 function namespace_theme_stylesheets()
 {
     wp_register_style('common-css',  get_template_directory_uri() . '/css/common.css', array(), null, 'all');
