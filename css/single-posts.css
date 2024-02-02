@@ -2,6 +2,14 @@
   -webkit-filter: drop-shadow(5px 5px 8px #ddd);
   filter: drop-shadow(5px 5px 8px #ddd);
 }
+.dropshadow {
+  -webkit-filter: drop-shadow(5px 5px 8px #ddd);
+  filter: drop-shadow(5px 5px 8px #ddd);
+}
+
+.post-image-rounded-corners {
+  border-radius: 10px !important;
+}
 
 .post-image-rounded-corners img {
   border-radius: 10px !important;
