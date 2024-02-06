@@ -91,6 +91,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  align-content: center;
 }
 
 .break {
@@ -121,7 +122,6 @@
   font-size: 17pt;
   font-weight: 500;
   white-space: nowrap;
-  margin-bottom: -1.5rem;
 }
 .depotrum-list .depotrum-row .normal {
   color: #000000;
@@ -265,7 +265,8 @@
   color: #3f4245;
   font-weight: 200;
   font-size: 10pt;
-  margin-left: 5px;
+  white-space: nowrap;
+  /* margin-left: 5px; */
 }
 
 /* tablet */
