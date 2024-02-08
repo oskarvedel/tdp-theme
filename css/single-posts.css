@@ -38,3 +38,24 @@
   margin-left: 1rem !important;
   font-size: 14px;
 }
+
+.partner-img {
+  vertical-align: middle;
+  max-width: 100%;
+  margin: 1rem;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .partner-img {
+    margin: 0.5rem;
+  }
+}
+
+.partner-page-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers items on the main axis */
+  align-items: center; /* Centers items on the cross axis */
+  align-content: center;
+}
