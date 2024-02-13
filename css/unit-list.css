@@ -7,13 +7,18 @@
   border-top-left-radius: 6px;
 }
 
+@media screen and (max-width: 767px) {
+  .depotrum-list {
+    margin-top: 0rem;
+  }
+}
+
 .depotrum-list.no-border {
   border: 0px !important;
 }
 
 .outer-depotrum-row {
   width: 100%;
-  border-bottom: 1px solid #eaeaea;
 }
 
 /********** DEPOTRUM ROW /***********/
@@ -27,11 +32,12 @@
   padding-bottom: 0.8rem;
   color: #000000;
   text-decoration: none; /* Removes underline */
+  border-bottom: 1px solid #eaeaea;
 }
 
-.depotrum-list .depotrum-row.last {
+/* .depotrum-list .depotrum-row.last {
   border-bottom: 0px;
-}
+} */
 
 .depotrum-list .depotrum-row.partner.yellowhover:hover {
   background-color: #fffae5 !important; /* Yellow background on hover */
@@ -49,6 +55,15 @@
 
 /* tablet */
 @media screen and (max-width: 1024px) {
+  .depotrum-list .depotrum-row {
+    display: flex;
+    flex-grow: 1;
+    font-family: "Helvetica";
+    padding: 0.5rem;
+    color: #000000;
+    text-decoration: none; /* Removes underline */
+  }
+
   .depotrum-list .depotrum-item {
     padding: 0.5rem;
     margin-top: 0.5rem;
@@ -70,7 +85,7 @@
 /*********************/
 
 .depotrum-list .depotrum-row .flex-container {
-  flex-grow: 9;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -104,6 +119,7 @@
 .depotrum-list .depotrum-row .size-column {
   /* padding-left: 1rem; */
   gap: 0.1rem;
+  max-width: calc(100% - 70px - 6rem);
 }
 
 .depotrum-list .depotrum-row .detaileddesc {
@@ -121,7 +137,7 @@
   color: #000000;
   font-size: 17pt;
   font-weight: 500;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 .depotrum-list .depotrum-row .normal {
   color: #000000;
@@ -145,7 +161,7 @@
   .depotrum-list .depotrum-row .detaileddesc {
     font-size: 10pt;
     font-weight: 500;
-    display: none;
+    /* display: none; */
   }
 
   .depotrum-list .depotrum-row .normal {
@@ -157,12 +173,12 @@
 
   .depotrum-list .depotrum-row .bigbold {
     color: #000000;
-    font-size: 15pt;
+    font-size: 14pt;
     font-weight: 600;
   }
   .depotrum-list .depotrum-row .big {
     color: #000000;
-    font-size: 13pt;
+    font-size: 12pt;
     font-weight: 500;
   }
   .depotrum-list .depotrum-row .smallbold {
@@ -175,14 +191,14 @@
 
 /********** IMAGE COLUMN /***********/
 .depotrum-list .depotrum-row .image-column {
-  min-width: 70px;
+  min-width: 60px;
 }
 
 /* mobile */
 @media screen and (max-width: 767px) {
   .depotrum-list .depotrum-row .image-column {
-    min-width: 60px;
-    max-width: 60px;
+    min-width: 50px;
+    max-width: 50px;
   }
 }
 
@@ -243,6 +259,7 @@
 .depotrum-list .depotrum-row .price-column {
   padding-left: 1rem;
   justify-content: flex-end;
+  margin-left: auto; /* Pushes the tag column to the end */
 }
 
 .depotrum-list .depotrum-row .price {
@@ -278,12 +295,14 @@
 /* mobile */
 @media screen and (max-width: 767px) {
   .depotrum-list .depotrum-row .price-column {
-    /* min-width: 100px; */
+    /* width: fit-content; */
     padding-left: 0.5rem;
+    padding-right: 0.4rem;
+    margin-left: auto; /* Pushes the tag column to the end */
   }
   .depotrum-list .depotrum-row .price.partner {
     font-weight: 400;
-    font-size: 14pt;
+    font-size: 13pt;
   }
 
   .depotrum-list .depotrum-row .price.non-partner {
@@ -302,7 +321,7 @@
   justify-content: flex-end;
 }
 
-.navigation-column svg {
+.view-all-row svg {
   fill: #ff8929;
   stroke: #ff8929;
   stroke-width: 2px;
@@ -343,30 +362,53 @@
 
 /********** VIEW ALL BUTTON /***********/
 /* common / full screen */
-.view-all-button {
-  float: right;
-  padding: 0.5rem 0.8rem;
-  background-color: #ff336a;
-  color: #ffffff;
-  line-height: 1rem;
-  font-weight: 700;
-  font-size: 12pt;
+.view-all-row {
+  display: flex;
+  flex-direction: row;
   font-family: "Helvetica";
-  text-align: center;
-  vertical-align: middle;
+  padding: 1rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  color: #000000;
+  text-decoration: none; /* Removes underline */
   align-items: center;
-  user-select: none;
-  border-radius: 0.3rem;
-  border: 0px;
-  margin-top: 0.5rem;
-  cursor: pointer;
+  overflow: hidden;
+}
+
+.view-all-row.yellowhover:hover {
+  background-color: #fffae5 !important; /* Yellow background on hover */
+  color: #000000;
+}
+
+.view-all {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  /* margin: 1rem;
+  margin-top: 0.8rem; */
+  margin-bottom: 0rem !important;
+  max-width: calc(80%);
+}
+
+.view-all-row svg {
+  fill: #ff8929;
+  stroke: #ff8929;
+  stroke-width: 2px;
+  margin-left: auto;
 }
 /* mobile */
 @media screen and (max-width: 767px) {
-  .view-all-button {
-    margin-top: 0.4rem;
-    padding: 0.4rem 0.6rem;
-    font-size: 11pt;
+  .view-all-row {
+  }
+  .view-all {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    margin-bottom: 0rem !important;
   }
 }
 /*********************/

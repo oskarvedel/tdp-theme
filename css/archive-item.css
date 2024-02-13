@@ -1,3 +1,194 @@
+.archive-item {
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;
+  align-items: center; */
+  /* padding: 1rem; */
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  /* text-align: center;
+  font-family: "Helvetica";
+  color: #000000;
+  text-decoration: none; Removes underline */
+}
+
+.archive-item.featured {
+  border: 3px solid #314b9a;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.archive-item.featured .featured-header {
+  background-color: #314b9a;
+  margin-bottom: 0;
+  padding: 8px 16px 12px;
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+}
+
+.archive-item.featured .featured-header .thumbs-up {
+  fill: #fff;
+  margin-right: 0.5rem;
+  vertical-align: text-top;
+}
+
+.archive-item.featured .featured-header .featured-description {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  .archive-item.featured .featured-header .featured-description {
+    display: none;
+  }
+}
+
+.archive-item.featured .featured-header .featured-description-title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
+
+.archive-item.featured .featured-header .tooltip {
+  display: inline-block;
+  position: relative;
+  justify-self: end;
+}
+
+.archive-item .main-info-row {
+  display: flex;
+  flex-grow: 1;
+  font-family: "Helvetica";
+  padding: 0.5rem;
+  color: #000000;
+  text-decoration: none; /* Removes underline */
+}
+
+@media screen and (max-width: 767px) {
+  .archive-item .main-info-row {
+    flex-wrap: wrap;
+  }
+
+  .tag-column {
+    /* This will allow the tag column to break into a new line */
+    flex: 0 0 100%; /* Do not grow, do not shrink, start on a new line at 100% width */
+    margin-left: 0; /* Reset margin left */
+    order: 3; /* Ensures the tag column stays below the image and title columns */
+  }
+}
+
+/********** IMAGE COLUMN /***********/
+.main-info-row .image-column img {
+  width: 175px !important;
+  max-width: 175px !important;
+  height: 125px !important;
+  object-fit: cover !important;
+  border-radius: 6px 6px 6px 6px !important;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  .main-info-row .image-column img {
+    flex: 1 1 auto;
+    width: 75px !important;
+    max-width: 75px !important;
+    height: 50px !important;
+    object-fit: cover !important;
+    border-radius: 3px 3px 3px 3px !important;
+    margin-top: 0rem;
+    margin-left: 0rem;
+  }
+
+  .depotrum-list .depotrum-row .image-column {
+    min-width: 60px;
+    max-width: 60px;
+  }
+}
+
+/*********************/
+
+/********** TITLE COLUMN /***********/
+.title-column {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  /* padding: 0.5rem; */
+  margin-left: 1rem;
+  overflow: hidden;
+}
+
+.title-column h2 {
+  font-size: 20px !important;
+  margin-top: 0.3rem;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 767px) {
+  .title-column {
+    flex: 1 1 auto;
+  }
+
+  .title-column h2 {
+    font-size: 17px !important;
+  }
+  .title-column .address {
+    font-size: 14px !important;
+    margin-bottom: 0rem;
+  }
+}
+
+/*********************/
+
+/********** TAG COLUMN /***********/
+.tag-column {
+  display: flex;
+  align-self: center; /* Adjusts vertical alignment */
+  flex-direction: column;
+  margin-left: auto; /* Pushes the tag column to the end */
+  justify-content: right;
+  padding: 0.5rem;
+}
+
+.tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.3rem;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 0.5rem;
+  white-space: nowrap;
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  .tag-column {
+    justify-content: left;
+  }
+  .tag {
+    justify-content: flex-start;
+    padding: 0.2rem;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-top: 0.2rem;
+  }
+}
+
 .elementor-widget-wp-widget-gd_post_distance .bsui .ml-2 {
   margin-left: 0rem !important;
 }

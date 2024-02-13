@@ -66,3 +66,9 @@ em {
   font-style: italic;
 }
 
+.truncate-text {
+  width: 100%; /* Adjust the width as needed, or use max-width for responsiveness */
+  overflow: hidden !important; /* Ensures that the overflow text is hidden */
+  white-space: nowrap !important; /* Ensures ; /* Keeps the text on a single line */
+  text-overflow: ellipsis !important; /* Ensures ; /* Adds an ellipsis to indicate text overflow */
+}
