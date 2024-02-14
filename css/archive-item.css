@@ -136,6 +136,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .title-column {
+    max-width: calc(100% - 85px);
+  }
   .title-column h2 {
     font-size: 17px !important;
   }
@@ -154,7 +157,7 @@
   margin-left: auto; /* Pushes the tag column to the end */
   justify-content: right;
   padding: 0.5rem;
-  flex-basis: 100%;
+  /* flex-basis: 100%; */
   order: 3;
 }
 
