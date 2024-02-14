@@ -26,6 +26,8 @@
 .depotrum-list .depotrum-row {
   display: flex;
   flex-grow: 1;
+  flex-wrap: nowrap;
+  white-space: nowrap;
   font-family: "Helvetica";
   padding: 1rem;
   padding-top: 0.8rem;
@@ -53,35 +55,6 @@
   padding: 0.2rem;
 }
 
-/* tablet */
-@media screen and (max-width: 1024px) {
-  .depotrum-list .depotrum-row {
-    display: flex;
-    flex-grow: 1;
-    font-family: "Helvetica";
-    padding: 0.5rem;
-    color: #000000;
-    text-decoration: none; /* Removes underline */
-  }
-
-  .depotrum-list .depotrum-item {
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-}
-
-/* mobile */
-@media screen and (max-width: 767px) {
-  .depotrum-list .depotrum-item {
-    padding: 0.7rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-top: 0.4rem;
-    margin-bottom: 0.4rem;
-    box-shadow: 0px 0px 16px 0px rgb(0 0 0 / 4%);
-  }
-}
 /*********************/
 
 .depotrum-list .depotrum-row .flex-container {
@@ -94,9 +67,10 @@
 }
 
 /* mobile */
-@media screen and (max-width: 767px) {
-  .depotrum-list .depotrum-row .flex-container {
-    gap: 0.8rem;
+@media screen and (max-width: 1024px) {
+  .depotrum-list .depotrum-row .flex-container.booking-enabled {
+    flex-wrap: wrap;
+    gap: 1.2rem;
     margin-right: 0rem;
     margin-left: 0rem;
   }
@@ -117,9 +91,13 @@
 /********** SIZE COLUMN /***********/
 /* common / full screen */
 .depotrum-list .depotrum-row .size-column {
-  /* padding-left: 1rem; */
+  max-width: calc(100% - 70px - 8rem);
   gap: 0.1rem;
-  max-width: calc(100% - 70px - 6rem);
+  width: fit-content;
+}
+
+.depotrum-list .depotrum-row .size-column.booking-enabled {
+  max-width: calc(100% - 70px - 18rem);
 }
 
 .depotrum-list .depotrum-row .detaileddesc {
@@ -154,10 +132,9 @@
 
 /* tablet */
 @media screen and (max-width: 1024px) {
-}
-
-/* mobile */
-@media screen and (max-width: 767px) {
+  .depotrum-list .depotrum-row .size-column.booking-enabled {
+    max-width: min-content;
+  }
   .depotrum-list .depotrum-row .detaileddesc {
     font-size: 10pt;
     font-weight: 500;
@@ -204,62 +181,27 @@
 
 /*********************/
 
-/********** PLACEMENT COLUMN /***********/
-/* common / full screen */
-.depotrum-list .depotrum-row .placement-column {
-  background-color: #f5f5f5;
-  border: 1px;
-  border-radius: 0.3rem;
-  border-color: #c5c5c5;
-  padding: 0.5rem;
-}
-
-.depotrum-list .depotrum-row .placement-text-div {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-left: 10px;
-}
-
-.depotrum-list .depotrum-row .placement-heading {
-  display: block;
-  font-weight: 300;
-  font-size: 9pt;
-  line-height: 1rem;
-  margin-bottom: 0px !important;
-}
-
-.depotrum-list .depotrum-row .placement-text {
-  font-weight: 500;
-  font-size: 8pt;
-  line-height: 1rem;
-}
-
-/* tablet */
-@media screen and (max-width: 1024px) {
-  .depotrum-list .depotrum-row .placement-column {
-    background-color: #f5f5f5;
-    border: 1px;
-    border-radius: 0.3rem;
-    border-color: #c5c5c5;
-    padding: 0.5rem;
-  }
-}
-
-/* mobile */
-@media screen and (max-width: 767px) {
-  .depotrum-list .depotrum-row .placement-column {
-    display: none;
-  }
-}
-
 /********** PRICE COLUMN /***********/
 /* common / full screen */
 .depotrum-list .depotrum-row .price-column {
   padding-left: 1rem;
   justify-content: flex-end;
   margin-left: auto; /* Pushes the tag column to the end */
+}
+
+.depotrum-list .depotrum-row .flex-container-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.depotrum-list .depotrum-row .flex-container-2.booking-enabled {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1.5rem;
 }
 
 .depotrum-list .depotrum-row .price {
@@ -287,38 +229,59 @@
 
 /* tablet */
 @media screen and (max-width: 1024px) {
-  .depotrum-list .depotrum-row .month {
+  .depotrum-list .depotrum-row .price-column {
+    flex-basis: 100%;
+    max-width: 100%; /* Set maximum width to 100% to ensure they break onto a new line */
+    padding-left: 0;
+    margin-left: 0; /* Reset margin left */
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+  }
+
+  .depotrum-list .depotrum-row .price-column.booking-enabled {
+    padding-left: 1rem;
+    justify-content: flex-start;
+    margin-left: auto; /* Pushes the tag column to the end */
+  }
+
+  .price-column .month {
     font-size: 9pt;
+  }
+
+  .price-column .price.partner {
+    font-weight: 400;
+    font-size: 13pt;
+  }
+
+  .price-column .price.non-partner {
+    font-weight: 300;
+    font-size: 11pt;
+  }
+  .price-column.booking-enabled .month {
+    font-size: 12pt;
+  }
+
+  .price-column.booking-enabled .price.partner {
+    font-weight: 400;
+    font-size: 15pt;
+  }
+}
+/*********************/
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+  .depotrum-list .depotrum-row .navigation-column {
+    /* display: flex; */
+    padding-left: 0.3rem;
   }
 }
 
 /* mobile */
 @media screen and (max-width: 767px) {
-  .depotrum-list .depotrum-row .price-column {
-    /* width: fit-content; */
-    padding-left: 0.5rem;
-    padding-right: 0.4rem;
-    margin-left: auto; /* Pushes the tag column to the end */
+  .depotrum-list .depotrum-row .navigation-column {
+    margin-left: auto;
+    justify-content: flex-end;
   }
-  .depotrum-list .depotrum-row .price.partner {
-    font-weight: 400;
-    font-size: 13pt;
-  }
-
-  .depotrum-list .depotrum-row .price.non-partner {
-    font-weight: 300;
-    font-size: 11pt;
-  }
-
-  .depotrum-list .depotrum-row .month {
-    font-size: 9pt;
-  }
-}
-/*********************/
-
-.depotrum-list .depotrum-row .navigation-column {
-  padding-left: 1rem;
-  justify-content: flex-end;
 }
 
 .view-all-row svg {
@@ -354,7 +317,6 @@
 /* mobile */
 @media screen and (max-width: 767px) {
   .continue-button {
-    padding: 10px 20px; /* Top and bottom padding 12px, left and right padding 24px */
     font-size: 14pt;
   }
 }

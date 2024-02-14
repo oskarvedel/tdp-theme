@@ -118,7 +118,6 @@
 .title-column {
   display: flex;
   flex-direction: column;
-  flex: 1;
   max-width: calc(
     100% - 85px
   ); /* Adjust the pixel value to the width of your image column including any margins */
@@ -136,9 +135,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  .title-column {
-    max-width: calc(100% - 85px);
-  }
   .title-column h2 {
     font-size: 17px !important;
   }
