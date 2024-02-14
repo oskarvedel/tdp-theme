@@ -194,6 +194,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .depotrum-list .depotrum-row .flex-container-2.booking-enabled {
@@ -202,6 +203,7 @@
   flex-direction: row;
   justify-content: flex-end;
   gap: 1.5rem;
+  align-items: center;
 }
 
 .depotrum-list .depotrum-row .price {
@@ -301,8 +303,6 @@
   font-family: "Helvetica";
   text-align: center;
   outline: none; /* Remove outline */
-  vertical-align: middle;
-  align-items: center;
   user-select: none;
   cursor: pointer; /* Pointer cursor on hover */
   border-radius: 6px !important;
