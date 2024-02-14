@@ -352,6 +352,7 @@
   margin-top: 0.8rem; */
   margin-bottom: 0rem !important;
   max-width: calc(80%);
+  line-height: 1.8rem;
 }
 
 .view-all-row svg {
