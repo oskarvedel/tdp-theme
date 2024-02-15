@@ -23,7 +23,11 @@ $customer_phone = get_post_meta($booking_id, 'customer_phone', true);
 $department_name = get_post_meta($booking_id, 'department_name', true);
 $department_address = get_post_meta($booking_id, 'department_address', true);
 $department_phone = get_post_meta($booking_id, 'department_phone', true);
-$unit_size = get_post_meta($booking_id, 'unit_size', true);
+
+$unit_link_id = get_post_meta($booking_id, 'unit_link', true);
+
+generate_size($unit_link_id);
+
 $unit_price = get_post_meta($booking_id, 'unit_price', true);
 
 //remove any trailing zeros from the unit price
@@ -32,10 +36,18 @@ $unit_price = get_post_meta($booking_id, 'unit_price', true);
 // Remove trailing zeros
 $unit_price = rtrim(rtrim($unit_price, '0'), '.');
 
-$unit_link = get_post_meta($booking_id, 'unit_link', true);
-
-
 setlocale(LC_TIME, 'da_DK.UTF8');
+
+//replace - with / in the date
+$move_in_date = str_replace('-', '/', $move_in_date);
+// Create a DateTime object from the move-in date string
+$move_in_date_obj = DateTime::createFromFormat('Y/m/d', $move_in_date);
+
+// Format the move-in date in the desired format
+$move_in_date = $move_in_date_obj->format('j. F Y');
+
+// Translate the month name
+$move_in_date = translate_month($move_in_date);
 
 function translate_month($date)
 {
@@ -44,14 +56,23 @@ function translate_month($date)
     return str_replace($english_months, $danish_months, $date);
 }
 
-// Create a DateTime object from the move-in date string
-$move_in_date_obj = DateTime::createFromFormat('d/m/Y', $move_in_date);
 
-// Format the move-in date in the desired format
-$move_in_date = $move_in_date_obj->format('j. F Y');
+function generate_size($unit_link_id)
+{
+    $rel_type = get_post_meta($unit_link_id, 'rel_type', true);
+    $size = "";
+    $size = get_post_meta($rel_type, 'm2', true);
+    $sizeunit = "m2";
+    if (!$size) {
+        $size = get_post_meta($rel_type, 'm3', true);
+        $sizeunit = "m3";
+    }
+    $size = str_replace('.', ',', $size);
 
-// Translate the month name
-$move_in_date = translate_month($move_in_date);
+    $size_formatted = $size . ' ' . $sizeunit;
+    return $size_formatted;
+}
+
 
 
 // Proceed with displaying the booking information
