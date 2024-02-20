@@ -92,7 +92,7 @@
 /********** SIZE COLUMN /***********/
 /* common / full screen */
 .depotrum-list .depotrum-row .size-column {
-  max-width: calc(100% - 70px - 8rem);
+  max-width: calc(100% - 70px - 7rem);
   gap: 0.1rem;
   width: fit-content;
 }
@@ -276,6 +276,11 @@
   .depotrum-list .depotrum-row .navigation-column {
     /* display: flex; */
     padding-left: 0.3rem;
+  }
+  .price-column.booking-enabled .price.partner {
+    font-weight: 500;
+    font-size: 16pt;
+    margin-bottom: 0.2rem;
   }
 }
 
