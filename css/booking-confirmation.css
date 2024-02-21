@@ -14,13 +14,13 @@
 /* mobile */
 @media screen and (max-width: 767px) {
   .confirmation-section {
-    margin: 10px auto;
+    margin: 0px auto;
     padding: 10px 20px 10px 30px;
   }
 }
 
 .confirmation-section h1 {
-  font-size: 3rem !important;
+  font-size: 2rem !important;
   margin-bottom: 20px;
 }
 

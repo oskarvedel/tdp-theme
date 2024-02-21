@@ -41,6 +41,9 @@ get_header();
 <style>
     body {
         background-color: #f7f7f7;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 </style>
 
@@ -89,7 +92,6 @@ get_header();
             <p class="price"><?php echo htmlspecialchars($unit_price); ?> kr</p>
             <p class="price-sub-label">om måneden</p>
         </div>
-        <span class="dashed-line">&nbsp;</span>
     </div>
 
 </div>
