@@ -65,6 +65,10 @@ select:focus {
   transform: scale(1.02);
 }
 
+.greyBackground {
+  background-color: #f0f0f0; /* Grey background color */
+}
+
 /*****DATEPOICKER IN USE******/
 
 /* This styles the custom select wrapper and trigger (MORE STYLES) */
