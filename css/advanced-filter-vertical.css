@@ -37,18 +37,14 @@
 }
  */
 
-.geodir-filter-container .form-check .form-check-label {
+/* .geodir-filter-container .form-check .form-check-label {
   color: #000000 !important;
   margin: 0px 0px 0px 20px;
 }
 input[type="checkbox"] {
-  /* Add if not using autoprefixer */
   -webkit-appearance: none;
-  /* Remove most all native input styles */
   appearance: none;
-  /* For iOS < 15 */
   background-color: var(--form-background);
-  /* Not removed via appearance */
   margin: 0;
   font: inherit;
   width: 1em;
@@ -70,4 +66,4 @@ input[type="checkbox"]::before {
 }
 input[type="checkbox"]:checked::before {
   transform: scale(1);
-}
+} */

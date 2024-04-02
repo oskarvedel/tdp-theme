@@ -241,5 +241,7 @@ function namespace_theme_stylesheets()
     wp_enqueue_style('booking-confirmation-css');
     wp_register_style('single-posts-css',  get_template_directory_uri() . '/css/single-posts.css', array(), null, 'all');
     wp_enqueue_style('single-posts-css');
+    wp_register_style('geolocation-list-css',  get_template_directory_uri() . '/css/geolocation-list.css', array(), null, 'all');
+    wp_enqueue_style('geolocation-list-css');
 }
 add_action('wp_enqueue_scripts', 'namespace_theme_stylesheets');
