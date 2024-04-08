@@ -48,7 +48,7 @@ get_header();
 </style>
 
 <div class="confirmation-section" style="padding-top: 40px;">
-    <h1>Din booking er bekræftet!</h1>
+    <h1>Din reservation er bekræftet!</h1>
     <p class="confirmation-code-label"> Bekræftelseskode: </p>
     <p class="confirmation-code"><?php echo htmlspecialchars($booking_id); ?></p>
     <p class="move-in-date-label">Din indflytningsdato</p>
@@ -86,7 +86,7 @@ get_header();
     <h3>Din opbevaringsenhed</h3>
     <div class="price-section">
         <div class="sub-price-section">
-            <p class="price-label">Pris per måned</p>
+            <p class="price-label">Pris</p>
         </div>
         <div class="sub-price-section" style="padding-left: 1rem; padding-right: 2rem;">
             <p class="price"><?php echo htmlspecialchars($unit_price); ?> kr</p>
