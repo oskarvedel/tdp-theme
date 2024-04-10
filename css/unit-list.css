@@ -60,6 +60,17 @@
   /* margin-left: 1rem; */
 }
 
+.depotrum-list .depotrum-row .flex-container.booking-enabled {
+  gap: 0.8rem;
+}
+
+/* mobile */
+@media screen and (max-width: 1024px) {
+  .depotrum-list .depotrum-row .flex-container {
+    gap: 0.8rem;
+  }
+}
+
 /* mobile */
 @media screen and (max-width: 1024px) {
   .depotrum-list .depotrum-row .flex-container.booking-enabled {
@@ -85,13 +96,13 @@
 /********** SIZE COLUMN /***********/
 /* common / full screen */
 .depotrum-list .depotrum-row .size-column {
-  max-width: calc(100% - 70px - 7rem);
+  max-width: calc(100% - 70px - 5.5rem);
   gap: 0.1rem;
   width: fit-content;
 }
 
 .depotrum-list .depotrum-row .size-column.booking-enabled {
-  max-width: calc(100% - 70px - 18rem);
+  max-width: calc(100% - 70px - 14.5rem);
 }
 
 .depotrum-list .depotrum-row .detaileddesc {
@@ -160,6 +171,74 @@
 }
 /*********************/
 
+/********** BOOKING PRICE COLUMN /***********/
+
+/* hides first price on archive page */
+.depotrum-list .depotrum-row .flex-container .price-column {
+  max-width: calc(100% - 70px - 5.5rem);
+  gap: 0.1rem;
+  width: fit-content;
+  display: none;
+}
+
+/* shows second price on archive page */
+.depotrum-list .depotrum-row .flex-container .flex-container-2 .price-column {
+  max-width: calc(100% - 70px - 5.5rem);
+  gap: 0.1rem;
+  width: fit-content;
+  display: flex;
+}
+
+/* shows first price on gd_place page */
+.depotrum-list .depotrum-row .flex-container.booking-enabled .price-column {
+  display: flex;
+  max-width: min-content;
+}
+
+/* hides second price on gd_place page */
+.depotrum-list
+  .depotrum-row
+  .flex-container.booking-enabled
+  .flex-container-2.booking-enabled
+  .price-column {
+  display: none;
+}
+
+/*
+.depotrum-list
+  .depotrum-row
+  .flex-container.booking-enabled
+  .booking-price-column {
+  display: none;
+}
+
+.depotrum-list
+  .depotrum-row
+  .flex-container-2.booking-enabled
+  .booking-price-column.booking-enabled {
+  display: flex;
+}
+
+.depotrum-list
+  .depotrum-row
+  .flex-container.booking-enabled
+  .booking-price-column {
+  display: flex;
+} */
+/* tablet */
+@media screen and (max-width: 1024px) {
+  .depotrum-list .depotrum-row .booking-price-column.booking-enabled {
+    max-width: min-content;
+    display: flex;
+  }
+}
+/* mobile */
+@media screen and (max-width: 767px) {
+  .depotrum-list .depotrum-row .booking-price-column {
+    display: flex;
+  }
+}
+
 /********** IMAGE COLUMN /***********/
 .depotrum-list .depotrum-row .image-column {
   min-width: 60px;
@@ -189,10 +268,11 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  padding-left: 1rem;
 }
 
 .depotrum-list .depotrum-row .flex-container-2.booking-enabled {
-  width: 100%;
+  max-width: min-content;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;

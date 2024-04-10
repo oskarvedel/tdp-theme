@@ -12,13 +12,13 @@
   text-decoration: none; Removes underline */
 }
 
-.archive-item.featured {
+.archive-item.trusted_partner {
   border: 3px solid #314b9a;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.archive-item.featured .featured-header {
+.archive-item.trusted_partner .trusted_partner-header {
   background-color: #314b9a;
   margin-bottom: 0;
   padding: 8px 16px 12px;
@@ -26,13 +26,15 @@
   grid-template-columns: auto auto 1fr;
 }
 
-.archive-item.featured .featured-header .thumbs-up {
+.archive-item.trusted_partner .trusted_partner-header .thumbs-up {
   fill: #fff;
   margin-right: 0.5rem;
   vertical-align: text-top;
 }
 
-.archive-item.featured .featured-header .featured-description {
+.archive-item.trusted_partner
+  .trusted_partner-header
+  .trusted_partner-description {
   color: #fff;
   font-size: 16px;
   font-weight: 600;
@@ -43,12 +45,16 @@
 
 /* mobile */
 @media screen and (max-width: 767px) {
-  .archive-item.featured .featured-header .featured-description {
+  .archive-item.trusted_partner
+    .trusted_partner-header
+    .trusted_partner-description {
     display: none;
   }
 }
 
-.archive-item.featured .featured-header .featured-description-title {
+.archive-item.trusted_partner
+  .trusted_partner-header
+  .trusted_partner-description-title {
   color: #fff;
   font-size: 16px;
   font-weight: 600;
@@ -57,7 +63,7 @@
   align-self: center;
 }
 
-.archive-item.featured .featured-header .tooltip {
+.archive-item.trusted_partner .trusted_partner-header .tooltip {
   display: inline-block;
   position: relative;
   justify-self: end;
