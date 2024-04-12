@@ -250,6 +250,18 @@
   padding-left: 1rem;
 }
 
+.flex-container-2.booking-enabled.line-break {
+  max-width: min-content !important;
+  margin-left: auto !important;
+}
+
+/*mobile*/
+@media screen and (max-width: 767px) {
+  .depotrum-list .depotrum-row .flex-container-2 {
+    padding-left: 0.3rem;
+  }
+}
+
 .depotrum-list .depotrum-row .flex-container-2.booking-enabled {
   max-width: 100%;
   display: flex;
@@ -280,6 +292,11 @@
   font-size: 10pt;
   white-space: nowrap;
   /* margin-left: 5px; */
+}
+
+.price-column.vertical-center.booking-enabled.line-break {
+  margin-left: 0 !important; /* Reset margin left when price is pushed to new line */
+  padding-left: 0.5rem !important;
 }
 
 /* tablet */
@@ -446,5 +463,71 @@
   .depotrum-list .depotrum-row .bsui .btn {
     padding: 0.4rem 0.6rem;
     font-size: 11pt;
+  }
+}
+
+/********** NOTE/***********/
+.note {
+  font-size: 10pt;
+  font-weight: 600;
+}
+
+/********** DISCOUNT /***********/
+.discount {
+  min-width: 6rem !important;
+  margin-bottom: 0rem !important;
+}
+
+.discount p {
+  color: #390 !important;
+  font-size: 12pt !important;
+  white-space: wrap;
+  margin-bottom: 0.3rem !important;
+  text-align: right;
+}
+
+.discount-price p {
+  font-size: 14pt !important;
+  font-weight: 600;
+  margin-bottom: 0rem !important;
+}
+
+.discount-active {
+  /* color: #ff336a;
+  color: #390;
+  color: #fe8240 !important; */
+  font-size: 12pt !important;
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: line-through;
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  .discount {
+    min-width: 4rem !important;
+    margin-bottom: 0rem !important;
+  }
+  .discount p {
+    font-size: 10pt !important;
+    margin-bottom: 0.2rem !important;
+  }
+  .discount-active {
+    font-size: 10pt !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .price-column.booking-enabled .price.partner.discount {
+    min-width: 8rem !important;
+  }
+
+  .price-column.booking-enabled .price.partner.discount-active {
+    font-size: 10pt !important;
+  }
+
+  .price-column.booking-enabled .price.partner.discount p {
+    text-align: left;
+    font-size: 12pt !important;
   }
 }
