@@ -250,11 +250,6 @@
   padding-left: 1rem;
 }
 
-.flex-container-2.booking-enabled.line-break {
-  max-width: min-content !important;
-  margin-left: auto !important;
-}
-
 /*mobile*/
 @media screen and (max-width: 767px) {
   .depotrum-list .depotrum-row .flex-container-2 {
@@ -263,7 +258,7 @@
 }
 
 .depotrum-list .depotrum-row .flex-container-2.booking-enabled {
-  max-width: 100%;
+  max-width: min-content;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -294,9 +289,23 @@
   /* margin-left: 5px; */
 }
 
-.price-column.vertical-center.booking-enabled.line-break {
-  margin-left: 0 !important; /* Reset margin left when price is pushed to new line */
+.price-column.vertical-center.booking-enabled.booking-btn-line-break {
+  margin-left: auto !important;
+  /*padding-left: 0.5rem !important; */
+  /* max-width: 100% !important; */
+}
+
+.price-column.vertical-center.booking-enabled.price-line-break {
   padding-left: 0.5rem !important;
+  margin-left: 0 !important;
+}
+
+.flex-container-2.booking-enabled.booking-btn-line-break {
+  margin-left: auto !important;
+}
+
+.flex-container-2.booking-enabled.price-line-break {
+  margin-left: auto !important;
 }
 
 /* tablet */
