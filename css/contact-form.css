@@ -1,0 +1,188 @@
+.contact-form-div {
+  overflow: hidden;
+  padding: 0rem 1rem 0rem 1rem;
+  /* border: 1px solid #eaeaea; */
+  border-radius: 5px; /* Rounded corners */
+  padding: 1rem;
+  margin-top: 0rem;
+  padding-top: 0rem;
+}
+
+.contact-form-title-div {
+  padding: 1rem;
+  padding-bottom: 0rem;
+  /* margin-bottom: 1rem; */
+  margin-top: 1rem;
+}
+
+.contact_form {
+  width: 100%;
+}
+
+.contact-form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px; /* Adjust as needed */
+  align-items: center;
+}
+
+.center-items {
+  justify-content: center !important;
+}
+
+/* Input field styles */
+.contact-form-row input[type="text"],
+.contact-form-row input[type="email"],
+.contact-form-row input[type="tel"],
+.contact-form-row input[type="date"],
+.contact-form-row textarea,
+select {
+  width: 48%;
+  padding: 10px;
+  border: 2px solid #eaeaea;
+  border-radius: 6px; /* Rounded corners */
+  font-size: 15px;
+}
+
+/* Input field styles */
+.contact-form-row textarea {
+  width: 100% !important;
+  padding-bottom: 100px !important;
+  margin-top: 1rem !important;
+  font-size: 15px !important;
+  font-family: Helvetica, Arial, sans-serif !important; /* Add this line */
+}
+/* Focus styles */
+.contact-form-row input[type="text"]:focus,
+.contact-form-row input[type="email"]:focus,
+.contact-form-row input[type="tel"]:focus,
+.contact-form-row input[type="date"]:focus,
+select:focus {
+  outline: none; /* Removes the default focus outline */
+  border: 2px solid #202020; /* Optional: changes the border color */
+}
+
+.contact-form-row input[type="submit"] {
+  background-color: #ff336a;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1rem;
+  font-family: "Helvetica";
+  text-align: center;
+  outline: none; /* Remove outline */
+  vertical-align: middle;
+  align-items: center;
+  user-select: none;
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 6px !important;
+  border: none; /* No border */
+  padding: 16px 20px; /* Top and bottom padding 12px, left and right padding 24px */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+  width: 100%;
+}
+.contact-form-row input[type="submit"]:hover {
+  background-color: #ff336a;
+  /* make the button grow 5% on hover */
+  transform: scale(1.02);
+}
+
+/*****DATEPICKER IN USE******/
+
+/* This styles the custom select wrapper and trigger (MORE STYLES) */
+.unit-select-wrapper {
+  width: 48%;
+  position: relative;
+  user-select: none;
+}
+
+.unit-select {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.unit-select__trigger {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  height: 45px;
+  border: 2px solid #eaeaea;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  appearance: none;
+  z-index: 2;
+  padding-right: 45px;
+}
+
+.unit-select__trigger:hover {
+  border: 2px solid #000000;
+}
+
+.dropdown-icon {
+  border-left: 2px solid #eaeaea;
+  height: 30px;
+  width: 40px;
+  position: absolute;
+  top: 8px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; /* Pointer cursor on hover */
+  pointer-events: none;
+  z-index: 1;
+}
+
+.contact-form-title {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.contact-form-instruction {
+  font-size: 16px; /* Set the size of the font */
+  color: #666; /* A lighter shade for the instructional text */
+  margin-top: 0; /* Remove any default margin */
+  width: 100%;
+  font-weight: 200;
+  margin-bottom: 0rem !important;
+}
+
+.contact-form-instruction-highlight {
+  font-size: 14px; /* Set the size of the font */
+  color: #000; /* A lighter shade for the instructional text */
+  margin-top: 0; /* Remove any default margin */
+  width: 100%;
+  font-weight: 600;
+  margin-bottom: 0rem !important;
+}
+
+.instruction .fullwidth {
+  width: 100%;
+}
+
+.error-message {
+  color: #ff3333;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  display: none;
+}
+
+.single-column {
+  width: 48%;
+}
+
+.contact-icon {
+  margin-right: 0.5rem;
+}
