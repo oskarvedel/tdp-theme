@@ -212,3 +212,28 @@ td {
   padding-bottom: 1rem; /* For 4:3 aspect ratio */
   position: relative;
 }
+
+.price-table {
+  margin-bottom: 1.5rem;
+}
+
+.faqs {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.faqs h2 {
+  margin-bottom: 1rem;
+}
+
+.faq-group {
+  margin-bottom: 0.5rem !important;
+}
+
+.faq-question {
+  font-weight: bold;
+}
+
+.faq-answer {
+  margin-bottom: 0.8rem;
+}
