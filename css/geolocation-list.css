@@ -43,7 +43,7 @@
   text-decoration: none;
   position: relative;
   cursor: pointer;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
   page-break-inside: avoid;
   -moz-column-break-inside: avoid;
   break-inside: avoid;

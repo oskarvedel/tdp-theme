@@ -245,5 +245,9 @@ function namespace_theme_stylesheets()
     wp_enqueue_style('geolocation-list-css');
     wp_register_style('contact-form-css',  get_template_directory_uri() . '/css/contact-form.css', array(), null, 'all');
     wp_enqueue_style('contact-form-css');
+    wp_register_style('top-filters-css',  get_template_directory_uri() . '/css/top-filters.css', array(), null, 'all');
+    wp_enqueue_style('top-filters-css');
+    wp_register_style('side-filters-css',  get_template_directory_uri() . '/css/side-filters.css', array(), null, 'all');
+    wp_enqueue_style('side-filters-css');
 }
 add_action('wp_enqueue_scripts', 'namespace_theme_stylesheets');

@@ -9,15 +9,11 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 h1,
@@ -26,15 +22,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 p a {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+  font-family: Helvetica, Arial, sans-serif;
   text-decoration: underline !important;
   font-weight: 700;
   color: #000;
@@ -47,7 +39,7 @@ p a {
 }
 
 a:hover {
-  color: #e56825;
+  color: #fc0;
 }
 
 strong {
@@ -72,6 +64,5 @@ em {
   white-space: nowrap !important; /* Ensures ; /* Keeps the text on a single line */
   text-overflow: ellipsis !important; /* Ensures ; /* Adds an ellipsis to indicate text overflow */
 }
-
 
 /* Path: css/common.css */
