@@ -58,7 +58,6 @@
   justify-content: flex-start;
   gap: 1.5rem;
   z-index: 10;
-  /* margin-left: 1rem; */
 }
 
 .depotrum-list .depotrum-row .flex-container.booking-enabled {

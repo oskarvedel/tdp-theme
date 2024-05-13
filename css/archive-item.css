@@ -78,7 +78,8 @@
   white-space: nowrap;
 }
 
-@media screen and (max-width: 767px) {
+/* tablet */
+@media screen and (max-width: 1024px) {
   .archive-item .main-info-row {
     flex-wrap: wrap;
   }
@@ -89,6 +90,7 @@
   flex-grow: 1;
   font-family: "Helvetica";
   padding: 0.5rem;
+  padding-bottom: 0rem;
   color: #000000;
   text-decoration: none; /* Removes underline */
   flex-wrap: nowrap;
@@ -139,9 +141,7 @@
 .title-column {
   display: flex;
   flex-direction: column;
-  max-width: calc(
-    100% - 85px - 3rem
-  ); /* Adjust the pixel value to the width of your image column including any margins */
+  /* max-width: calc(100% - 85px - 3rem); */
   /* justify-content: center;
   align-items: center; */
   /* padding: 0.5rem; */
@@ -150,6 +150,19 @@
   width: fit-content;
 }
 
+/* tablet */
+@media screen and (max-width: 1024px) {
+  .title-column {
+    max-width: calc(100% - 85px - 8rem);
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  .title-column {
+    max-width: calc(100% - 85px - 3rem);
+  }
+}
 .title-column h2 {
   font-size: 22px !important;
   margin-top: 0.3rem;
@@ -194,7 +207,7 @@
 }
 
 /* mobile */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .tag-column {
     flex-direction: row;
     justify-content: flex-start !important;
