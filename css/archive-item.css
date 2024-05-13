@@ -99,6 +99,7 @@
 @media screen and (max-width: 767px) {
   .archive-item .second-info-row {
     flex-wrap: wrap;
+    padding-top: 0rem;
   }
 }
 
@@ -139,7 +140,7 @@
   display: flex;
   flex-direction: column;
   max-width: calc(
-    100% - 85px - 1rem
+    100% - 85px - 3rem
   ); /* Adjust the pixel value to the width of your image column including any margins */
   /* justify-content: center;
   align-items: center; */
@@ -153,6 +154,7 @@
   font-size: 22px !important;
   margin-top: 0.3rem;
   margin-bottom: 0.3rem;
+  white-space: wrap;
 }
 
 @media screen and (max-width: 767px) {
@@ -246,7 +248,7 @@
 }
 
 .star-review-column {
-  margin-left: 0.5rem;
+  margin-left: 0.2rem;
   display: flex;
   align-items: flex-end;
   margin-top: auto;
@@ -275,10 +277,11 @@
 
 .star-review-text {
   white-space: nowrap;
-  font-size: 9pt;
+  font-size: 11pt;
   font-weight: 600;
   text-decoration: underline;
   letter-spacing: 0.05em; /* adjust as needed */
+  color: #000;
 }
 
 .star-review .ph-text {
@@ -286,24 +289,34 @@
 }
 
 .best-review {
-  margin: 20px 10px;
+  /* margin: 20px 10px; */
   position: relative;
   min-width: 0;
   line-height: 1.35em;
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0.2rem;
   display: flex;
   white-space: nowrap;
   color: #555;
   height: 18px;
+  width: 100%;
 }
-
 .review-text {
   display: inline-block; /* Change display to inline-block */
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 14px;
-  width: 90%; /* Set width to 70% */
+  width: 85%;
+  font-weight: 500;
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  .review-text {
+    width: 70%;
+  }
 }
 
 .best-review-link {
