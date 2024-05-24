@@ -66,6 +66,14 @@
   color: #000000 !important;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .search-bar-filter-button:hover {
+    background-color: #fc0;
+    border-color: #fc0;
+    color: #000000 !important;
+  }
+}
+
 .search-bar-filter-button:hover .filter-button-question-icon {
   color: #000000 !important;
 }
@@ -220,7 +228,8 @@
   .search-wrapper {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    padding-top: 0.8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -229,8 +238,15 @@
   }
 }
 .search-wrapper .inner-search-container h3 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
   margin-left: 6px;
+  font-size: 1.2rem;
+}
+@media only screen and (max-width: 1024px) {
+  .search-wrapper .inner-search-container h3 {
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+  }
 }
 .search-wrapper .inner-search-container .sales-wrapper {
   margin-bottom: 8px;
@@ -342,6 +358,7 @@
   text-align: center;
   cursor: pointer;
   border: none;
+  z-index: 999;
 }
 .main-search-enter-button:hover {
   background-color: rgb(229, 183, 0);
@@ -376,4 +393,16 @@
   .enter-button-mobile-row {
     display: none;
   }
+}
+
+.search-error-wrapper {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  display: none;
+}
+
+.search-error-text {
+  font-size: 0.9rem;
+  color: #ff0000;
+  font-weight: 300;
 }

@@ -216,3 +216,8 @@
   font-weight: 600;
   color: #000;
 }
+
+.selected-filter {
+  border-color: #fc0;
+  background-color: rgba(255, 204, 0, 0.08);
+}
