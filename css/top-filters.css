@@ -20,7 +20,7 @@
   }
 }
 
-.top-filter-list button {
+.top-filter-button {
   position: relative;
   font-size: 16px;
   font-weight: 600;
@@ -53,7 +53,7 @@
 }
 
 @media (max-width: 768px) {
-  .top-filter-list button {
+  .top-filter-button {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
@@ -63,14 +63,14 @@
   }
 }
 
-.top-filter-list button:hover {
+.top-filter-button:hover {
   background-color: #fc0;
   border-color: #fc0;
 
   color: #000000 !important;
 }
 
-.top-filter-list button:hover .filter-button-question-icon {
+.top-filter-button:hover .filter-button-question-icon {
   color: #000000 !important;
 }
 
