@@ -2,6 +2,9 @@
   padding-left: 8px !important;
   padding-right: 8px !important;
   max-width: 100% !important;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .search-bar-filter-list {
@@ -289,12 +292,14 @@
   align-items: center;
   height: 72px;
   margin: 5px;
+  background: #fff;
 }
 
 @media screen and (max-width: 1024px) {
   .search-input-wrapper {
     height: 62px;
     margin: 5px;
+    width: 100%;
   }
 }
 
@@ -325,13 +330,16 @@
   border: none;
   flex-grow: 1;
   background-color: transparent;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media screen and (max-width: 1024px) {
   .location-search-input {
     height: 52px;
     margin: 5px;
-    padding: 8px 32px 8px 42px;
+    padding: 8px 8px 8px 42px;
     width: min-content;
   }
 }
@@ -340,6 +348,9 @@
   font-size: 16px;
   color: #5a6365;
   font-family: MuseoSans, Helvetica, Arial, sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .location-search-input::-ms-clear {
   display: none;
@@ -351,8 +362,7 @@
   line-height: 48px;
   font-weight: bold;
   font-size: 16px;
-  color: #fff;
-  margin-right: 12px;
+  color: #000;
   background-color: #fc0;
   border-radius: 5px;
   text-align: center;
@@ -369,7 +379,7 @@
 }
 
 @media (max-width: 1024px) {
-  .main-search-enter-button {
+  .enter-button-mobile {
     width: 100%;
     margin: 6px;
   }
@@ -381,6 +391,7 @@
 @media (min-width: 1024px) {
   .enter-button-desktop {
     display: block;
+    margin-right: 12px;
   }
 }
 
@@ -405,4 +416,71 @@
   font-size: 0.9rem;
   color: #ff0000;
   font-weight: 300;
+}
+
+/*LOKATION SEARCH BAR STYLING*/
+.enter-button-lokation-page {
+  margin-right: 6px;
+}
+@media (min-width: 1024px) {
+  .enter-button-lokation-page {
+    margin-right: 12px;
+  }
+}
+
+.main-search-enter-button-lokation-page {
+  height: 58px;
+  width: 80px;
+  line-height: 48px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+  background-color: #fc0;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  z-index: 999;
+}
+
+@media (min-width: 1024px) {
+  .main-search-enter-button-lokation-page {
+    height: 68px;
+  }
+}
+
+.inner-search-container-lokation-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .inner-search-container-lokation-page {
+    width: 420px;
+  }
+}
+
+.lokation-page-enter-button-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: min-content;
+}
+@media (max-width: 420px) {
+  .lokation-page-enter-button-wrapper {
+    display: none;
+  }
+}
+
+.lokation-page-enter-button-mobile-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 420px) {
+  .lokation-page-enter-button-mobile-row {
+    display: none;
+  }
 }
