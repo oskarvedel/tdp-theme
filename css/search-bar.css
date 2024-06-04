@@ -368,7 +368,7 @@
   text-align: center;
   cursor: pointer;
   border: none;
-  z-index: 999;
+  z-index: 3;
 }
 .main-search-enter-button:hover {
   background-color: rgb(229, 183, 0);
@@ -440,7 +440,7 @@
   text-align: center;
   cursor: pointer;
   border: none;
-  z-index: 999;
+  z-index: 3;
 }
 
 @media (min-width: 1024px) {

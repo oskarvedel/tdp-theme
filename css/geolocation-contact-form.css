@@ -1,0 +1,341 @@
+.geolocation-contact-form-outer-wrapper-div {
+  overflow: hidden;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  /* border: 1px solid #eaeaea; */
+  border-radius: 5px; /* Rounded corners */
+  margin-top: 0rem;
+  background-color: #314b9a;
+}
+
+/* smaller side padding on mobile */
+@media (max-width: 768px) {
+  .geolocation-contact-form-outer-wrapper-div {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.geolocation-contact-form-wrapper-div {
+  display: flex;
+  flex-direction: row; /* Default direction */
+}
+
+@media (max-width: 768px) {
+  .geolocation-contact-form-wrapper-div {
+    flex-direction: column; /* Change direction on mobile */
+  }
+}
+
+.geolocation-contact-form-div {
+  overflow: hidden;
+  /* border: 1px solid #eaeaea; */
+  border-radius: 5px; /* Rounded corners */
+  margin-top: 0rem;
+  width: 50%;
+}
+
+/* 100% on mobile */
+@media (max-width: 768px) {
+  .geolocation-contact-form-div {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+
+.geolocation-contact-form-desktop-subtitle-div {
+  width: 50%;
+  margin-right: 2rem;
+}
+
+@media (max-width: 768px) {
+  .geolocation-contact-form-desktop-subtitle-div {
+    display: none;
+  }
+}
+
+.geolocation-contact-form-mobile-title-div {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .geolocation-contact-form-mobile-title-div {
+    display: block;
+  }
+}
+.geolocation-contact-form-subtitle-text {
+  font-size: 16px !important;
+  color: #fff; /* A lighter shade for the instructional text */
+
+  width: 100%;
+  font-weight: 200 !important;
+  margin-bottom: 2rem;
+}
+
+.geolocation-contact-form-subtitle-text b {
+  font-weight: 600;
+}
+
+.geolocation-contact-form-subtitle-text.highlight {
+  font-size: 24px !important;
+  font-weight: 600 !important;
+}
+
+.geolocation-contact-form {
+  width: 100%;
+}
+
+.geolocation-contact-form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.2rem; /* Adjust as needed */
+  align-items: center;
+}
+
+.center-items {
+  justify-content: center !important;
+}
+
+/* Input field styles */
+.geolocation-contact-form-row input[type="text"],
+.geolocation-contact-form-row input[type="email"],
+.geolocation-contact-form-row input[type="tel"],
+.geolocation-contact-form-row input[type="date"],
+.geolocation-contact-form-row textarea,
+select {
+  width: 48%;
+  padding: 10px;
+  border: 2px solid #eaeaea;
+  border-radius: 6px; /* Rounded corners */
+  font-size: 15px;
+}
+
+/* Input field styles */
+.geolocation-contact-form-row textarea {
+  width: 100% !important;
+  padding-bottom: 100px !important;
+  margin-top: 1rem !important;
+  font-size: 15px !important;
+  font-family: Helvetica, Arial, sans-serif !important; /* Add this line */
+}
+/* Focus styles */
+.geolocation-contact-form-row input[type="text"]:focus,
+.geolocation-contact-form-row input[type="email"]:focus,
+.geolocation-contact-form-row input[type="tel"]:focus,
+.geolocation-contact-form-row input[type="date"]:focus,
+select:focus {
+  outline: none; /* Removes the default focus outline */
+  border: 2px solid #c8c8c8;
+}
+
+.geolocation-contact-form-row textarea:focus {
+  outline: none; /* Removes the default focus outline */
+  border: 2px solid #c8c8c8;
+}
+
+.geolocation-contact-form-row input[type="submit"] {
+  background-color: #fff;
+  color: #314b9a;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1rem;
+  font-family: "Helvetica";
+  text-align: center;
+  outline: none; /* Remove outline */
+  vertical-align: middle;
+  align-items: center;
+  user-select: none;
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 6px !important;
+  border: none; /* No border */
+  padding: 16px 20px; /* Top and bottom padding 12px, left and right padding 24px */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+  width: 100%;
+}
+.geolocation-contact-form-row input[type="submit"]:hover {
+  background-color: #e3e3e3;
+  /* make the button grow 5% on hover */
+  /* transform: scale(1.02); */
+  /* border-radius: 6px !important; */
+}
+
+.geolocation-contact-form-checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.geolocation-contact-form-checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+label[for="consent"] {
+  color: white;
+}
+
+/*****DATEPICKER IN USE******/
+
+/* This styles the custom select wrapper and trigger (MORE STYLES) */
+.unit-type-select-wrapper {
+  width: 48%;
+  position: relative;
+  user-select: none;
+}
+
+.unit-type-select {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.unit-type-select__trigger {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  height: 45px;
+  border: 2px solid #eaeaea;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  appearance: none;
+  z-index: 2;
+  padding-right: 45px;
+}
+
+.unit-type-select__trigger:focus {
+  border-color: white;
+}
+
+.dropdown-icon {
+  border-left: 2px solid #eaeaea;
+  height: 30px;
+  width: 40px;
+  position: absolute;
+  top: 8px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; /* Pointer cursor on hover */
+  pointer-events: none;
+  z-index: 1;
+  color: #fff;
+  fill: #fff;
+}
+
+.geolocation-contact-form-title {
+  display: flex;
+  margin-bottom: 1rem;
+  font-size: 34px !important;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.3em;
+  text-align: center; /* Center align the text */
+}
+
+.geolocation-contact-form-desktop-title {
+  margin-bottom: 2rem;
+  font-size: 44px !important;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .geolocation-contact-form-desktop-title {
+    display: none !important;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.geolocation-contact-form-info-icon {
+  margin-left: 1rem;
+  color: #314b9a;
+  font-size: 1.3rem;
+  pointer-events: auto;
+  position: absolute;
+  top: 30px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+}
+
+/* dont display the icon on mobile*/
+@media (max-width: 768px) {
+  .geolocation-contact-form-info-icon {
+    display: none !important;
+  }
+}
+
+.geolocation-contact-form-instruction {
+  font-size: 16px;
+  color: #fff; /* A lighter shade for the instructional text */
+  margin-top: 0; /* Remove any default margin */
+  width: 100%;
+  font-weight: 200;
+  margin-bottom: 0px !important;
+}
+
+#geolocation-contact-form-message::placeholder {
+  line-height: 1.2rem;
+}
+
+.error-message {
+  color: #ff3333;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  display: none;
+}
+
+.single-column {
+  width: 48%;
+}
+
+.contact-icon {
+  margin-right: 0.5rem;
+}
+
+.geolocation-contact-form-info-box {
+  display: none;
+  position: absolute;
+  top: -25px; /* Adjust as needed */
+  right: 50px; /* Adjust as needed */
+  background-color: #fff;
+  /* border: 1px solid #ccc; */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 4;
+  width: 300px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.geolocation-contact-form-info-box-main-text {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem !important;
+}
+
+.geolocation-contact-form-info-box-small-text {
+  font-size: 0.7rem;
+  line-height: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 0rem !important;
+  color: #4f4f4f;
+}
