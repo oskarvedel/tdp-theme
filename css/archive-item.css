@@ -144,15 +144,16 @@
   /* justify-content: center;
   align-items: center; */
   /* padding: 0.5rem; */
-  margin-left: 1rem;
   overflow: hidden;
   width: fit-content;
+  margin-left: 1rem;
 }
 
 /* tablet */
 @media screen and (max-width: 1024px) {
   .title-column {
     max-width: calc(100% - 85px - 8rem);
+    margin-bottom: 1rem;
   }
 }
 
@@ -162,11 +163,33 @@
     max-width: calc(100% - 85px - 3rem);
   }
 }
+
 .title-column h2 {
   font-size: 22px !important;
   margin-top: 0.3rem;
   margin-bottom: 0.3rem;
   white-space: wrap;
+}
+
+.title-column h2 a {
+  color: #000;
+}
+
+.title-column h2 a:hover {
+  color: #000;
+}
+.title-column .address {
+  margin-bottom: 0.5rem;
+}
+
+.title-column .address a {
+  font-weight: 300;
+  color: #555;
+  text-decoration: none !important;
+}
+
+.title-column .address a:hover {
+  color: #555;
 }
 
 @media screen and (max-width: 767px) {
@@ -175,7 +198,7 @@
   }
   .title-column .address {
     font-size: 14px !important;
-    margin-bottom: 0rem;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -190,6 +213,16 @@
   padding: 0.5rem;
   /* flex-basis: 100%; */
   order: 3;
+}
+
+.tag-column a {
+  color: #000;
+  text-decoration: none;
+}
+
+.tag-column a:hover {
+  color: #000 !important;
+  text-decoration: none;
 }
 
 .tag {
@@ -265,10 +298,14 @@
   align-items: flex-end;
   margin-top: auto;
   flex-direction: row;
+
   /* margin-left: auto; */
   /* align-items: flex-start; */
 }
 
+.star {
+  padding: 0.05rem;
+}
 .stars {
   margin-right: 10px;
   align-items: center;
@@ -289,11 +326,12 @@
 
 .star-review-text {
   white-space: nowrap;
-  font-size: 11pt;
+  font-size: 9pt;
   font-weight: 600;
   text-decoration: underline;
   letter-spacing: 0.05em; /* adjust as needed */
   color: #000;
+  line-height: 10pt;
 }
 
 .star-review .ph-text {
@@ -340,4 +378,48 @@
   letter-spacing: 0.02em; /* adjust as needed */
   color: #000;
   margin-left: 10px;
+  line-height: 11pt;
+  padding-bottom: 1px;
 }
+
+.telnum-link {
+  /* padding-bottom: 1px; */
+  color: #000;
+  font-weight: 600;
+  margin-left: 0.6rem;
+  letter-spacing: 0.05rem;
+  font-size: 1.15rem;
+  line-height: 1.4rem; /* Adjust this value as needed */
+}
+
+.telnum-link:hover {
+  color: #000;
+}
+
+.telnum-icon {
+  color: #000;
+  font-size: 0.9rem;
+}
+
+.custom-underline {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 2px solid #000 !important;
+}
+
+.custom-underline:hover {
+  color: #000 !important;
+}
+
+/* .telnum-link:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fc0;
+  transform: scaleX(0);
+  transform-origin: 0;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+} */

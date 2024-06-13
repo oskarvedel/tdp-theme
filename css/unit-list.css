@@ -219,15 +219,16 @@
 }
 
 /********** IMAGE COLUMN /***********/
-.depotrum-list .depotrum-row .image-column {
+.depotrum-list .depotrum-row .unit-illustration-column {
   min-width: 60px;
 }
 
 /* mobile */
 @media screen and (max-width: 767px) {
-  .depotrum-list .depotrum-row .image-column {
+  .depotrum-list .depotrum-row .unit-illustration-column {
     min-width: 50px;
     max-width: 50px;
+    display: none;
   }
 }
 
@@ -260,10 +261,20 @@
 .depotrum-list .depotrum-row .flex-container-2.booking-enabled {
   max-width: min-content;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 1.5rem;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: flex-end;
+  padding: 0.4rem;
+}
+@media screen and (max-width: 1024px) {
+  .depotrum-list .depotrum-row .flex-container-2.booking-enabled {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    max-width: none;
+    padding: 0rem;
+  }
 }
 
 .depotrum-list .depotrum-row .price {
@@ -550,4 +561,34 @@
 .scarcity-text {
   color: #fe8240;
   font-size: 11pt;
+}
+
+/* .unit-list-telnum-div {
+  margin-top: 0.3rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .unit-list-telnum-div {
+    margin-top: 0rem;
+  }
+} */
+
+.telnum-unit-list-link {
+  /* padding-bottom: 1px; */
+  color: #000;
+  font-weight: 600;
+  margin-right: 0.4rem !important;
+  /* letter-spacing: 0.05rem; */
+  font-size: 0.9rem;
+  line-height: 1.4rem; /* Adjust this value as needed */
+  margin-right: 0.2rem;
+}
+
+.telnum-unit-list-link:hover {
+  color: #000;
+}
+
+.unit-list-telnum-icon {
+  color: #000;
+  font-size: 0.7rem;
 }

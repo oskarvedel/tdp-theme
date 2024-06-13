@@ -1,3 +1,9 @@
+.gd-place-contact-form-wrapper {
+  border: 2px solid #eaeaea;
+  border-radius: 6px; /* Rounded corners */
+  margin-top: 1rem;
+}
+
 .contact-form-div {
   overflow: hidden;
   padding: 0rem 1rem 0rem 1rem;
@@ -10,9 +16,9 @@
 
 .contact-form-title-div {
   padding: 1rem;
+  padding-top: 1.5rem;
   padding-bottom: 0rem;
   /* margin-bottom: 1rem; */
-  margin-top: 1rem;
 }
 
 .contact_form {
@@ -138,6 +144,8 @@ select:focus {
   cursor: pointer; /* Pointer cursor on hover */
   pointer-events: none;
   z-index: 1;
+  color: #000;
+  fill: #000;
 }
 
 .contact-form-title {

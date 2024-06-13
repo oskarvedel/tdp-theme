@@ -102,21 +102,6 @@ select:focus {
   border: 2px solid #000000;
 }
 
-.dropdown-icon {
-  border-left: 2px solid #eaeaea;
-  height: 30px;
-  width: 40px;
-  position: absolute;
-  top: 8px;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer; /* Pointer cursor on hover */
-  pointer-events: none;
-  z-index: 1;
-}
-
 .lock-in-rate {
   display: flex;
   align-items: center; /* Align the text and the icon vertically */

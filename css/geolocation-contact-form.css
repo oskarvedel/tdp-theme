@@ -1,7 +1,7 @@
 .geolocation-contact-form-outer-wrapper-div {
   overflow: hidden;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
   /* border: 1px solid #eaeaea; */
@@ -214,7 +214,7 @@ label[for="consent"] {
   border-color: white;
 }
 
-.dropdown-icon {
+.geolocation-contact-form-dropdown-icon {
   border-left: 2px solid #eaeaea;
   height: 30px;
   width: 40px;
@@ -242,7 +242,7 @@ label[for="consent"] {
 }
 
 .geolocation-contact-form-desktop-title {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 44px !important;
   font-weight: 600;
   color: #fff;
