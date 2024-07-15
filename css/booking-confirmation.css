@@ -118,3 +118,152 @@
   background: transparent;
   z-index: 0;
 }
+
+.redirect-section {
+  max-width: none !important;
+  background: linear-gradient(#e6f8fa, #fff);
+  padding: 0 0 0 0 !important;
+  border: none !important;
+  border-radius: none !important;
+  margin: 0 0 0 0 !important;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.redirect-section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 4.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in 0.2s 1 normal both;
+  gap: 1rem;
+  max-width: 60%;
+}
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+  .redirect-section-content {
+    max-width: 80%;
+    padding-top: 2.5rem;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  .redirect-section-content {
+    max-width: 90%;
+    padding-top: 1.5rem;
+  }
+}
+
+.redirect-message {
+  font-weight: 400 !important;
+  font-size: 1.2rem !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  line-height: 2rem;
+  -webkit-font-smoothing: antialiased;
+  margin-top: -1rem;
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  .redirect-message {
+    text-align: left;
+    font-size: 1rem !important;
+    line-height: 1.5rem;
+  }
+}
+
+/********** REDIRECT BUTTON /***********/
+/* common / full screen */
+.redirect-button {
+  background-color: #fc0;
+  width: min-content;
+  color: #000;
+  align-self: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5rem;
+  font-family: "Helvetica";
+  text-align: center;
+  outline: none; /* Remove outline */
+  text-decoration: none !important;
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 6px !important;
+  border: none; /* No border */
+  padding: 14px 24px; /* Top and bottom padding 12px, left and right padding 24px */
+  white-space: nowrap; /* Prevent content from wrapping */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+  transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.redirect-button:hover {
+  color: #000 !important;
+  transform: scale(1.005);
+}
+
+/* very small mobile */
+@media screen and (max-width: 270px) {
+  .redirect-button {
+    /* font-size: 14pt; */
+    padding: 8px 28px; /* Top and bottom padding 12px, left and right padding 24px */
+    white-space: wrap;
+  }
+}
+/*********************/
+
+.complete-booking-header {
+  font-size: 2.8rem !important;
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  .complete-booking-header {
+    font-size: 2rem !important;
+    text-align: left;
+  }
+}
+
+.bold-redirect-message {
+  font-weight: 600;
+}
+
+.reservation-sub-message {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+  color: #555;
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  .reservation-sub-message {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+}
+
+.reservation-confirmation-illustration {
+  margin-top: 4rem;
+  width: 100%;
+  max-width: 1010px;
+}
+/* tablet */
+@media screen and (max-width: 1024px) {
+  .reservation-confirmation-illustration {
+    margin-top: 2rem;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  .reservation-confirmation-illustration {
+    margin-top: 0.5rem;
+  }
+}

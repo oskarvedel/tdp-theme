@@ -221,6 +221,7 @@
 /********** IMAGE COLUMN /***********/
 .depotrum-list .depotrum-row .unit-illustration-column {
   min-width: 60px;
+  max-width: 60px;
 }
 
 /* mobile */
@@ -512,12 +513,12 @@
   margin-bottom: 0rem !important;
 }
 
-.discount-active {
+.lower-price {
   /* color: #ff336a;
   color: #390;
   color: #fe8240 !important; */
   font-size: 12pt !important;
-  font-weight: 600;
+  /* font-weight: 600; */
   white-space: nowrap;
   text-decoration: line-through;
 }
@@ -552,6 +553,10 @@
   }
 }
 
+.scarcity-active {
+  color: #fe8240 !important;
+}
+
 .price.partner.scarcity-active {
   font-size: 14pt;
   font-weight: 600;
@@ -562,7 +567,6 @@
   color: #fe8240;
   font-size: 11pt;
 }
-
 /* .unit-list-telnum-div {
   margin-top: 0.3rem;
 }
@@ -591,4 +595,13 @@
 .unit-list-telnum-icon {
   color: #000;
   font-size: 0.7rem;
+}
+
+.green {
+  color: #390 !important;
+}
+
+.depotrum-row .supplier-unit-id {
+  font-size: 9pt;
+  font-weight: 300;
 }
