@@ -1,0 +1,22 @@
+name: Deploy code to FTP servers
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy-tdo-theme:
+    name: deploy-tdp-theme
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get latest code
+        uses: actions/checkout@v4
+
+      - name: Deploy tdp-theme to tjekdepot.dk
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ftp.tjekdepot.dk
+          username: ${{ secrets.DUELHOST_USERNAME }}
+          password: ${{ secrets.DUELHOST_PASSWORD }}
+          local-dir: ./
+          server-dir: domains/tjekdepot.dk/public_html/wp-content/themes/tdp-theme/
